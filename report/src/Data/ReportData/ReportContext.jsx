@@ -8,16 +8,17 @@ export const useReportContext = () => {
 
 
 export default function ReportContextProvider({children}){
-
-
-
-
-
     const imgHome = DadosAlteraveis.imagemDaHome;
     const clientName = DadosAlteraveis.clientName;
     const coordenadas = DadosAlteraveis.coordenadas;
     const endereco = DadosAlteraveis.endereco;
     const cep = DadosAlteraveis.Cep;
+
+
+
+    
+
+
 
 
 
