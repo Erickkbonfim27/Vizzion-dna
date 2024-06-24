@@ -4,8 +4,17 @@ import { Link } from "react-router-dom";
 import { PATHS } from "../../router/PATHS";
 
 export default function Home() {
-  const { imgHome, clientName, coordenadas, endereco, Logo, cep } =
-    useReportContext();
+  const {
+    imgHome,
+    clientName,
+    coordenadas,
+    endereco,
+    Logo,
+    cep,
+    disable,
+    handleOnChange,
+    message,
+  } = useReportContext();
 
   return (
     <div className="ReportHome">
@@ -20,8 +29,28 @@ export default function Home() {
           <p> Endereço: {endereco} </p>
           <p> Cep: {cep} </p>
         </div>
-
-        <Link to={PATHS.SecaoUm}>Ver Relatorio</Link>
+        <div className="PasssCodeControll">
+          <label htmlFor="passCode">Senha de acesso</label>
+          <input
+            onChange={handleOnChange}
+            type="text"
+            name="passCode"
+            id="passCode"
+          />
+          <button
+            className={`Linked ${disable ? "Disabled" : ""}`}
+            disabled={disable}
+          >
+            {disable ? (
+              <div className="Disable">
+                Digite a Senha
+                {message && <p>{message}</p>}
+              </div>
+            ) : (
+              <Link to={PATHS.SecaoUm}>Ver Relatório</Link>
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );
