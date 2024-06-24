@@ -111,4 +111,5 @@ export const DadosAlteraveis = {
       Percentual: '33.33%',
     },
   ],
+  usosPermitidos: ['NC1-B', 'NC1-C', 'NC2-A', 'NC2-B', 'NC2-C'],
 };
