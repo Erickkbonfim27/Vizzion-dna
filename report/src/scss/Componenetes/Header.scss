@@ -13,9 +13,18 @@
         gap: 10vh;
 
         li{
+            padding: 1vh 2vh; 
+            border-radius: 1vh;
             a{
                 color: #000;
                 text-decoration: none;
+            }
+
+            &:hover{
+                background-color: #315B49;
+                a{
+                    color: #8AD31A;
+                }
             }
         }
     }
@@ -23,4 +32,8 @@
     img{
         width: 20vh;
     }
+}
+
+.selecionado{
+    background-color: #8AD31A;
 }

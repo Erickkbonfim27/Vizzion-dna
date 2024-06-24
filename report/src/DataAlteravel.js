@@ -90,8 +90,8 @@ export const DadosAlteraveis = {
       },
   ],
   RestricoesDoImovel: [
-    {message: 'Necessidade de retificação de área total na matrícula'},
-    {message: 'Ausência de registro das partes de Walmir Merisio e Ledy, bem como de Marlu Walendosky Martins e Ivana'}
+    'Necessidade de retificação de área total na matrícula',
+    'Ausência de registro das partes de Walmir Merisio e Ledy, bem como de Marlu Walendosky Martins e Ivana',
   ],
   
 };
