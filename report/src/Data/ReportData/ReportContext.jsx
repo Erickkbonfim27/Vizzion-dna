@@ -13,9 +13,9 @@ export default function ReportContextProvider({children}){
     const coordenadas = DadosAlteraveis.coordenadas;
     const endereco = DadosAlteraveis.endereco;
     const cep = DadosAlteraveis.Cep;
-    const historico = DadosAlteraveis.Historico
-    const restricoes = DadosAlteraveis.RestricoesDoImovel
-
+    const historico = DadosAlteraveis.Historico;
+    const restricoes = DadosAlteraveis.RestricoesDoImovel;
+    const proprietariosAtuais = DadosAlteraveis.proprietariosAtuais;
 
 
 
@@ -28,6 +28,7 @@ export default function ReportContextProvider({children}){
         cep,
         historico,
         restricoes,
+        proprietariosAtuais,
     }
 
     return (
