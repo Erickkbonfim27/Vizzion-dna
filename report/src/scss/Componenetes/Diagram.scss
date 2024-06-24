@@ -68,20 +68,30 @@
 }
 
 .HistoricTitle{
+  width: 75%;
+  margin: 0 auto;
   text-align: center;
   font-size: 3vh;
   font-family: inter;
   margin-top: 3vh;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
 
-  &::after{
-    content: '';
-    width: 45vh;
-    height: 0.5vh;
+  a{
+    text-decoration: none;
+    color: #0b301f;
+    background-color: #12c80f;
+    padding: 1.5vh 5vh;
     border-radius: 1vh;
-    display: flex;
-    margin:  0 auto;
-    background-color: #315B49;
-    margin-bottom: 2vh;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &:hover{
+      background-color: #0b301f;
+      color: #12c80f;
+    }
   }
 }

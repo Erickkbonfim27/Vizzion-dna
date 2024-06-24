@@ -1,6 +1,7 @@
 import imgVar from "./Data/Reportimages/image.png";
 
 export const DadosAlteraveis = {
+  passCode: '000-aaa',
   imagemDaHome: imgVar,
   clientName: "José",
   coordenadas: "-27.10589409588796, -48.913661305307016",

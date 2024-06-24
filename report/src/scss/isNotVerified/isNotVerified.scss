@@ -1,0 +1,47 @@
+.IsNotVerified{
+    background-color: #f5f2f2;
+    min-height: 100vh;
+    font-family: inter;
+
+    img{
+        display: flex;
+        margin: 0 auto;
+        width: 50vh;
+        position: relative;
+        top: 20vh;
+    }
+    .DocsText{
+        position: relative;
+        top: 3vh;
+        
+        img{
+            width: 10vh;
+            position: relative;
+            
+        }
+        .Textos{
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: 23vh;
+            h1{
+                font-size: 5vh;
+                text-transform: uppercase;
+            }
+            .ReturnHome{
+                position: relative;
+                top: 5vh;
+                background-color: #084539;
+                box-sizing: border-box;
+                padding: 2% 15%;
+                border-radius: 1vh;
+                text-decoration: none;
+                color: #f5f2f2;
+
+                
+            }
+        }
+    }
+
+}
