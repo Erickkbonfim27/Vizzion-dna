@@ -1,0 +1,37 @@
+.Restricoes {
+    width: 45%;
+    padding: 1vh;
+    margin-top: 2vh !important;
+    border-radius: 1vh;
+    position: relative;
+    left: 4vh;
+    background-color: #ffcaca;
+    font-family: inter;
+
+  .titulo {
+    text-align: center;
+    font-size: 3vh;
+    font-family: inter;
+    margin-bottom: 1vh;
+    color: #d60909;
+
+    &::after {
+      content: "";
+      width: 45vh;
+      height: 0.5vh;
+      border-radius: 1vh;
+      display: flex;
+      margin: 0 auto;
+      background-color: #791919;
+      margin-bottom: 2vh;
+    }
+  }
+  .restricaoText{
+    padding: 1vh;
+    
+    li{
+        font-size: 1.6vh;
+        text-align: justify;
+    }
+  }
+}
