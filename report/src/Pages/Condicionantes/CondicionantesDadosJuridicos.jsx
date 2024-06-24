@@ -111,6 +111,7 @@ export default function CondicionantesDadosJuridicos() {
             <Enchentes />
           </section>
           <section>
+            <h3>Localização e pontos próximos ao imóvel</h3>
             <iframe
               src="https://www.google.com/maps/d/u/0/embed?mid=1gO1npXJZM4rsYPiOJm-eXO_4tOHrZLI&ehbc=2E312F&noprof=1"
               width="640"
