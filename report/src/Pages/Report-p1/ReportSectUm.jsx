@@ -16,7 +16,7 @@ export default function ReportSectUm() {
     <>
       {Verified === 'True' && (
         <div className="ReporstSectUm">
-          <Header selected="condicionantes" />
+          <Header selected="historico" />
           <div className="HistoricTitle">
             <h3>Histórico do imóvel</h3>
             <Link to={PATHS.SecaoDeCondicionais}>
