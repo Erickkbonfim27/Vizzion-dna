@@ -1,0 +1,83 @@
+.grid-container {
+  width: 75%;
+  min-height: 30vh !important;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vh;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+}
+
+.grid-item {
+  position: relative;
+  min-height: 15vh;
+}
+
+.annotation {
+  background-color: #D9F6DF;
+  border-radius: 5px;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HeadderCard {
+  display: flex;
+  justify-content: space-between;
+  background-color: #315B49;
+  padding: 1.3vh 1vh;
+  border-radius: 1vh 1vh 0 0;
+  color: #8AD31A;
+  align-items: center;
+
+  .order {
+    font-size: 1.3vh;
+  }
+
+  .codigo {
+    text-transform: uppercase;
+    font-size: 1.4vh;
+    background-color: #D9F6DF;
+    padding: 0.5vh 1.5vh;
+    border-radius: 0.4vh;
+    color: #315B49; 
+  }
+}
+
+.SectionBodyData {
+  padding: 0 1vh;
+  align-items: center;
+
+  .EntryMessage {
+    text-align: justify;
+    padding: 0.5vh 1vh;
+  }
+  
+  .ListClients {
+    margin-left: 2vh;
+    list-style-type: none;
+    line-height: 1.9vh;
+    padding: 1vh 1vh 1vh 1vh;
+  }
+}
+
+.HistoricTitle{
+  text-align: center;
+  font-size: 3vh;
+  font-family: inter;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+
+  &::after{
+    content: '';
+    width: 45vh;
+    height: 0.5vh;
+    border-radius: 1vh;
+    display: flex;
+    margin:  0 auto;
+    background-color: #315B49;
+    margin-bottom: 2vh;
+  }
+}
