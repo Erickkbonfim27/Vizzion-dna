@@ -13,11 +13,7 @@ export default function ReportContextProvider({children}){
     const coordenadas = DadosAlteraveis.coordenadas;
     const endereco = DadosAlteraveis.endereco;
     const cep = DadosAlteraveis.Cep;
-
-
-
-    
-
+    const historico = DadosAlteraveis.Historico
 
 
 
@@ -30,6 +26,7 @@ export default function ReportContextProvider({children}){
         Logo,
         endereco,
         cep,
+        historico,
     }
 
     return (
