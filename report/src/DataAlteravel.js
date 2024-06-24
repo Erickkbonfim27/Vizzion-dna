@@ -77,21 +77,37 @@ export const DadosAlteraveis = {
       percento: "33%",
     },
     {
-        ProprietarioUm: "Marlu Walendosky Martins",
-        ProprietarioDois: " Ivana Walendosky ",
-        Metragem: "752,47m²",
-        percento: "33%",
-      },
-      {
-        ProprietarioUm: "Marcia Walendosky Pereira",
-        ProprietarioDois: "sem",
-        Metragem: "752,47m²",
-        percento: "33%",
-      },
+      ProprietarioUm: "Marlu Walendosky Martins",
+      ProprietarioDois: " Ivana Walendosky ",
+      Metragem: "752,47m²",
+      percento: "33%",
+    },
+    {
+      ProprietarioUm: "Marcia Walendosky Pereira",
+      ProprietarioDois: "sem",
+      Metragem: "752,47m²",
+      percento: "33%",
+    },
   ],
   RestricoesDoImovel: [
-    'Necessidade de retificação de área total na matrícula',
-    'Ausência de registro das partes de Walmir Merisio e Ledy, bem como de Marlu Walendosky Martins e Ivana',
+    "Necessidade de retificação de área total na matrícula",
+    "Ausência de registro das partes de Walmir Merisio e Ledy, bem como de Marlu Walendosky Martins e Ivana",
   ],
-  
+  proprietariosAtuais: [
+    {
+      proprietarios: ["Walmir Merisio", "Ledy Walendosky Merisio"],
+      MetragemAprox: "752,47m²",
+      Percentual: '33.33%',
+    },
+    {
+      proprietarios: ["Marlu Walendosky Martins", "Ivana Walendosky"],
+      MetragemAprox: "752,47m²",
+      Percentual: '33.33%',
+    },
+    {
+      proprietarios: ["Marcia Walendosky Pereira"],
+      MetragemAprox: "752,47m²",
+      Percentual: '33.33%',
+    },
+  ],
 };
