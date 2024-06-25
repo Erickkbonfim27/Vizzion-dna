@@ -1,7 +1,11 @@
 import imgVar from "./Data/Reportimages/image.png";
+import enchente7mt from "./Data/Reportimages/Enchentes/enchente7mt.png";
+import enchente8mt from "./Data/Reportimages/Enchentes/enchente8mt.png";
+import enchente9mt from "./Data/Reportimages/Enchentes/enchente9mt.png";
+import enchente10mt from "./Data/Reportimages/Enchentes/enchente10mt.png";
 
 export const DadosAlteraveis = {
-  passCode: '000-aaa',
+  passCode: "000-aaa",
   imagemDaHome: imgVar,
   clientName: "José",
   coordenadas: "-27.10589409588796, -48.913661305307016",
@@ -98,18 +102,50 @@ export const DadosAlteraveis = {
     {
       proprietarios: ["Walmir Merisio", "Ledy Walendosky Merisio"],
       MetragemAprox: "752,47m²",
-      Percentual: '33.33%',
+      Percentual: "33.33%",
     },
     {
       proprietarios: ["Marlu Walendosky Martins", "Ivana Walendosky"],
       MetragemAprox: "752,47m²",
-      Percentual: '33.33%',
+      Percentual: "33.33%",
     },
     {
       proprietarios: ["Marcia Walendosky Pereira"],
       MetragemAprox: "752,47m²",
-      Percentual: '33.33%',
+      Percentual: "33.33%",
     },
   ],
-  usosPermitidos: ['NC1-B', 'NC1-C', 'NC2-A', 'NC2-B', 'NC2-C'],
+  usosPermitidos: ["NC1-B", "NC1-C", "NC2-A", "NC2-B", "NC2-C"],
+  enchente7mt,
+  enchente8mt,
+  enchente9mt,
+  enchente10mt,
+  zoneamento: "urbano",
+  regrasDeUso: ["dontFind"],
+  taxaOcupacao: "50%",
+  Recuos: [
+    "frontal: 5 metros",
+    "Lateral: 3 metros",
+    "Fundos: 3 metros",
+  ],
+  alvara: "dontFind",
+  habitese: "dontFind",
+  cno: "dontFind",
+  cnar: "dontFind",
+  matricula: "dontFind",
+  licensaAmbiental: "dontFind",
+  avcb: "dontFind",
+  escrituraPublicaDeCompraeVenda: "dontFind",
+  loteMinimo: "240m²",
+  testada: "12mt",
+  alturaMaximaPermitida: "dontSpecificData",
+  macrozona: "zmpl",
+  microzona: "UP UP12 - PRIMEIRO DE MAIO",
+  pavimentos: "6",
+  areasVerdes: "não presente no local",
+  relevo: "dontFind",
+  linkEarth:
+    "https://earth.google.com/web/@-27.10698407,-48.91510957,27.87887074a,244.1886874d,35y,9.41777135h,53.5497058t,360r/data=OgMKATA",
+  iptu: "dontFind",
+  mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
 };

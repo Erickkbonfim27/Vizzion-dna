@@ -63,6 +63,39 @@ export default function ReportContextProvider({ children }) {
   const restricoes = DadosAlteraveis.RestricoesDoImovel;
   const proprietariosAtuais = DadosAlteraveis.proprietariosAtuais;
   const usosPermitidos = DadosAlteraveis.usosPermitidos;
+  const enchente7mt = DadosAlteraveis.enchente7mt;
+  const enchente8mt = DadosAlteraveis.enchente8mt;
+  const enchente9mt = DadosAlteraveis.enchente9mt;
+  const enchente10mt = DadosAlteraveis.enchente10mt;
+  const zoneamento = DadosAlteraveis.zoneamento;
+  const regrasDeUso = DadosAlteraveis.regrasDeUso;
+  const taxaDeOcupacao = DadosAlteraveis.taxaOcupacao;
+  const Recuos = DadosAlteraveis.Recuos;
+  const alvara = DadosAlteraveis.alvara;
+  const habitese = DadosAlteraveis.habitese;
+  const cno = DadosAlteraveis.cno;
+  const cnar = DadosAlteraveis.cnar;
+  const matricula = DadosAlteraveis.matricula;
+  const licensaAmbiental = DadosAlteraveis.licensaAmbiental;
+  const avcb = DadosAlteraveis.avcb;
+  const escrituraPublicaDeCompraeVenda = DadosAlteraveis.escrituraPublicaDeCompraeVenda;
+  const loteMinimo = DadosAlteraveis.loteMinimo;
+  const testada = DadosAlteraveis.testada;
+  const taxaOcupacao = DadosAlteraveis.taxaOcupacao;
+  const alturaMaximaPermitida = DadosAlteraveis.alturaMaximaPermitida;
+  const macrozona = DadosAlteraveis.macrozona;
+  const microzona = DadosAlteraveis.microzona;
+  const pavimentos = DadosAlteraveis.pavimentos;
+  const areasVerdes = DadosAlteraveis.areasVerdes;
+  const relevo = DadosAlteraveis.relevo;
+  const linkEarth = DadosAlteraveis.linkEarth;
+  const iptu = DadosAlteraveis.iptu;
+  const mapa = DadosAlteraveis.mapa;
+  const Rules = DadosAlteraveis.regrasDeUso;
+
+
+
+  
   
   const value = {
     imgHome,
@@ -79,6 +112,35 @@ export default function ReportContextProvider({ children }) {
     message,
     Verified,
     usosPermitidos,
+    enchente7mt,
+    enchente8mt,
+    enchente9mt,
+    enchente10mt,
+    zoneamento,
+    regrasDeUso,
+    taxaDeOcupacao,
+    Recuos,
+    alvara,
+    habitese,
+    cno,
+    cnar,
+    matricula,
+    licensaAmbiental,
+    avcb,
+    escrituraPublicaDeCompraeVenda,
+    loteMinimo,
+    testada,
+    taxaOcupacao,
+    alturaMaximaPermitida,
+    macrozona,
+    microzona,
+    pavimentos,
+    mapa,
+    areasVerdes,
+    relevo,
+    linkEarth,
+    iptu,
+    Rules,
   };
 
   return (

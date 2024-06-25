@@ -39,6 +39,11 @@ export default function CondicionantesDadosJuridicos() {
     linkEarth,
     iptu,
     handleOnClick,
+    enchente7mt,
+    enchente8mt,
+    enchente9mt,
+    enchente10mt,
+    Rules,
   } = useReportContext();
   let Verified = localStorage.getItem("@item");
   return (
@@ -54,42 +59,48 @@ export default function CondicionantesDadosJuridicos() {
               de construção ou venda{" "}
             </p>
             <div className="Permitted">
-              <p>
+              <h3>Usos permitidos</h3>
+              <div className="holl">
                 {usosPermitidos.map((item, index) => (
-                  <div className="Items">`${item} / `</div>
+                  <p className="Items" key={index}>
+                    {item} /
+                  </p>
                 ))}
-              </p>
+              </div>
             </div>
           </div>
-          <section className="RestricoesZoneamentoDowloadable">
+          <section className="RestricoesZoneamento">
             <Restricoes restricoes={restricoes} />
-            <div>
-              <p>Zoneamento: {zoneamento}</p>
+            <div className="RegDowData">
+              <p className="Zoneamento">Zoneamento: {zoneamento}</p>
               <RegrasDeUso
                 RegrasDeUso={regrasDeUso}
                 TaxaDeOcupacao={taxaDeOcupacao}
                 Recuos={Recuos}
-              />
-              <Dowloadable
-                alvara={alvara}
-                habitese={habitese}
-                cno={cno}
-                cnar={cnar}
-                matricula={matricula}
-                licensaAmbiental={licensaAmbiental}
-                avcb={avcb}
-                escrituraPublicaDeCompraeVenda={escrituraPublicaDeCompraeVenda}
-              />
-              <DadosGerais
-                loteMinimo={loteMinimo}
-                testada={testada}
-                taxaOcupacao={taxaOcupacao}
-                alturaMaximaPermitida={alturaMaximaPermitida}
-                macrozona={macrozona}
-                microzona={microzona}
-                pavimentosMaximosPermitidos={pavimentos}
+                Rules={Rules}
               />
             </div>
+          </section>
+          <section className="DadosGerais">
+            <Dowloadable
+              alvara={alvara}
+              habitese={habitese}
+              cno={cno}
+              cnar={cnar}
+              matricula={matricula}
+              licensaAmbiental={licensaAmbiental}
+              avcb={avcb}
+              escrituraPublicaDeCompraeVenda={escrituraPublicaDeCompraeVenda}
+            />
+            <DadosGerais
+              loteMinimo={loteMinimo}
+              testada={testada}
+              taxaOcupacao={taxaOcupacao}
+              alturaMaximaPermitida={alturaMaximaPermitida}
+              macrozona={macrozona}
+              microzona={microzona}
+              pavimentosMaximosPermitidos={pavimentos}
+            />
           </section>
           <section className="Ambiental">
             <AnaliseAmbiental
@@ -108,7 +119,12 @@ export default function CondicionantesDadosJuridicos() {
                 atingida de acordo com o nível do rio
               </p>
             </div>
-            <Enchentes />
+            <Enchentes
+              nv1={enchente7mt}
+              nv2={enchente8mt}
+              nv3={enchente9mt}
+              nv4={enchente10mt}
+            />
           </section>
           <section>
             <h3>Localização e pontos próximos ao imóvel</h3>
@@ -121,9 +137,7 @@ export default function CondicionantesDadosJuridicos() {
               loading="lazy"
               title="Google Maps"
             ></iframe>
-            <button onClick={handleOnClick}>
-              Veja no earth
-            </button>
+            <button onClick={handleOnClick}>Veja no earth</button>
           </section>
         </div>
       )}
