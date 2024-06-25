@@ -1,86 +1,125 @@
 .Condicionantes {
   font-family: inter;
-
-  .textApresentation {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    top: 3vh;
-    p {
-      width: 60%;
+}
+.textApresentation {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 3vh;
+  p {
+    width: 60%;
+  }
+  .Permitted {
+    width: 30%;
+    background-color: rgb(238, 241, 243);
+    min-height: 6vh;
+    justify-content: center;
+    padding: 2vh;
+    border-radius: 1.5vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    h3 {
     }
-    .Permitted {
-      width: 30%;
-      background-color: rgb(238, 241, 243);
-      min-height: 6vh;
-      justify-content: center;
-      padding: 2vh;
-      border-radius: 1.5vh;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      h3 {
-      }
-      .holl {
-        display: flex;
-        justify-content: space-between;
+    .holl {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.RestricoesZoneamento {
+  position: relative;
+  top: 6vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: rgb(17, 255, 0);
+  padding: 2vh;
+  margin-bottom: 6vh;
+
+  .Restricoes {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.933);
+    backdrop-filter: blur(1vh);
+    padding: 2vh;
+    border-radius: 1.5vh;
+
+    .titulo {
+      text-transform: uppercase;
+      margin-bottom: 1vh;
+    }
+    .restricaoText {
+      li {
+        margin-left: 2vh;
       }
     }
   }
-  .RestricoesZoneamento {
-    position: relative;
-    top: 6vh;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    background-color: rgb(17, 255, 0);
-    padding: 2vh;
-    margin-bottom: 6vh;
 
-    .Restricoes {
-      width: 40%;
-      background-color: rgba(255, 255, 255, 0.933);
+  .RegDowData {
+    width: 50%;
+
+    .Zoneamento {
+      text-transform: uppercase;
+      font-size: 2vh;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.871);
       backdrop-filter: blur(1vh);
-      padding: 2vh;
-      border-radius: 1.5vh;
-
-      .titulo {
-        text-transform: uppercase;
-        margin-bottom: 1vh;
+      padding: 1vh;
+      margin-bottom: 2.3vh;
+      border-radius: 1vh;
+    }
+    .RegrasDeUsoBody {
+      display: flex;
+      justify-content: space-between;
+      .RegrasDeUso {
+        width: 50%;
       }
-      .restricaoText {
-        li {
-            margin-left: 2vh;
-        }
+      .ocupacao {
+        width: 50%;
+        border-left: 1px solid;
+        padding-left: 3vh;
       }
     }
+  }
+}
+.DadosGerais {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vh;
+  position: relative;
+  top: 3vh;
+  margin-bottom: 5vh;
+}
+.Downloadable {
+    text-align: left;
+    width: 100%;
+    
+  .card {
+    width: 5vh;
+  }
+}
 
-    .RegDowData {
-      width: 50%;
+.Downloadable .card-body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2vh;
+}
 
-      .Zoneamento {
-        text-transform: uppercase;
-        font-size: 2vh;
-        font-weight: bold;
-        background-color: rgba(255, 255, 255, 0.871);
-        backdrop-filter: blur(1vh);
-        padding: 1vh;
-        margin-bottom: 2.3vh;
-        border-radius: 1vh;
-      }
-      .RegrasDeUsoBody {
-        display: flex;
-        justify-content: space-between;
-        .RegrasDeUso {
-          width: 50%;
-        }
-        .ocupacao {
-          width: 50%;
-          border-left: 1px solid;
-          padding-left: 3vh;
-        }
-      }
-    }
+.Downloadable .card-body p {
+  margin: 0 10px;
+}
+
+.Downloadable .btn {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  &:hover{
+    background-color: #21c41b;
+    color: #2b2b2b;
   }
 }
