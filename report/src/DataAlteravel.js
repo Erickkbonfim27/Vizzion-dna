@@ -143,13 +143,13 @@ export const DadosAlteraveis = {
   testada: "12mt",
   alturaMaximaPermitida: "dontSpecificData",
   macrozona: "zmpl",
-  microzona: "UP UP12 - PRIMEIRO DE MAIO",
+  microzona: "UP UP12",
   pavimentos: "6",
   areasVerdes: "não presente no local",
   relevo: "dontFind",
   linkEarth:
     "https://earth.google.com/web/@-27.10698407,-48.91510957,27.87887074a,244.1886874d,35y,9.41777135h,53.5497058t,360r/data=OgMKATA",
-  iptu: "dontFind",
+  iptu: ['sem pendências encontradas'],
   mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
   viabilidade,
 };
