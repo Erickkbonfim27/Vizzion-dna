@@ -1,12 +1,12 @@
 .Condicionantes {
   font-family: inter;
-  .Ambiental{
-    .titleSectionAmbinetal{
-        text-align: center;
-        font-size: 5vh;
-        margin-bottom: 7vh;
-        position: relative;
-        top: 3vh;
+  .Ambiental {
+    .titleSectionAmbinetal {
+      text-align: center;
+      font-size: 5vh;
+      margin-bottom: 7vh;
+      position: relative;
+      top: 3vh;
     }
   }
 }
@@ -230,12 +230,33 @@
         min-width: 70vh;
         text-align: center;
         border-radius: 0.5vh;
-
       }
-      li{
+      li {
         list-style-type: none;
         margin-top: 1vh;
       }
+    }
+  }
+}
+.Enchentes {
+  .text {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      text-align: center;
+      font-size: 5vh;
+      margin-bottom: 5vh;
+      position: relative;
+      top: 3vh;
+    }
+    p{
+        width: 70%;
+        margin:  0 auto;
+        text-align: center;
+        background-color: #ebeaea;
+        padding: 2vh;
+        margin-bottom: 3vh;
+        border-radius: 1vh;
     }
   }
 }

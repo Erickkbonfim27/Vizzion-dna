@@ -116,7 +116,7 @@ export default function CondicionantesDadosJuridicos() {
           </section>
           <section className="Enchentes">
             <div className="text">
-              <h3>Afetação em enchentes</h3>
+              <h3>Afetação em Enchentes</h3>
               <p>
                 O mapeamento abaixo se refere em como a área dm questão pode ser
                 atingida de acordo com o nível do rio
