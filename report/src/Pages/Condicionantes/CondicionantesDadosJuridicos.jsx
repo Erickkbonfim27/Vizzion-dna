@@ -106,6 +106,7 @@ export default function CondicionantesDadosJuridicos() {
              <PendenciasIptu iptu={iptu} />
           </section>
           <section className="Ambiental">
+            <h2 className="titleSectionAmbinetal">Analise Ambiental</h2>
             <AnaliseAmbiental
               mapa={mapa}
               areasVerdes={areasVerdes}

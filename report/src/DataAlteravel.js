@@ -148,7 +148,7 @@ export const DadosAlteraveis = {
   areasVerdes: "não presente no local",
   relevo: "dontFind",
   linkEarth:
-    "https://earth.google.com/web/@-27.10698407,-48.91510957,27.87887074a,244.1886874d,35y,9.41777135h,53.5497058t,360r/data=OgMKATA",
+    "https://earth.google.com/web/data=MkEKPwo9CiExc1YtdW9fTUtWMVFjNC1aVGZ2d2VuNU9YRFNpQkxzOUgSFgoUMDA5MUNBRjczNzMxODI5ODA0ODIgAQ",
   iptu: ['sem pendências encontradas'],
   mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
   viabilidade,
