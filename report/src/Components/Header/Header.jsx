@@ -13,7 +13,7 @@ export default function Header({ selected }) {
           <a href={PATHS.SecaoDeCondicionais}> Condicionantes </a>
         </li>
         <li className={selected === "deficiencias" ? "selecionado" : ""}>
-          <a href={PATHS.deficiencias}> Deficiencias </a>
+          <a href={PATHS.deficiencias}> Deficiências </a>
         </li>
         <li className={selected === "potenciais" ? "selecionado" : ""}>
           <a href={PATHS.potenciais}> Potenciais </a>

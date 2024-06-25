@@ -259,7 +259,6 @@
       border-radius: 1vh;
     }
   }
-
   .printsDosNiveis {
     width: 80%;
     margin: 0 auto;
@@ -298,13 +297,138 @@
     justify-content: space-between;
     align-items: center;
     text-align: justify;
-    .Texts{
-        width: 40%;
-        h2{
-            text-transform: uppercase;
-            line-height: 3vh;
-            margin-bottom: 2vh;
-        }
+    .Texts {
+      width: 40%;
+      h2 {
+        text-transform: uppercase;
+        line-height: 3vh;
+        margin-bottom: 2vh;
+      }
     }
   }
 }
+
+.EnvoltaDoImovel {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+
+  .legendaCompletaDoArredorDoImol{
+    width: 100%;
+    min-width: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+  }
+  h3{
+    text-transform: uppercase;
+    font-size: 3vh;
+    margin-bottom: 4vh;
+
+    &::after{
+        display: flex;
+        content: '';
+        width: 10vh;
+        height: 0.5vh;
+        border-radius: 1vh;
+        background-color: #21c41b;
+    }
+  }
+
+  .Legend {
+    align-items: center;
+    display: flex;
+    gap: 1vh;
+    margin-bottom: 1vh;
+    span {
+      width: 2.2vh;
+      height: 2.2vh;
+    }
+    .fisioterapia {
+      background-color: rgb(15, 157, 88);
+    }
+    .conveniecnia {
+      background-color: rgb(129, 119, 23);
+    }
+    .Padaria {
+      background-color: rgb(249, 168, 37);
+    }
+    .Petshop {
+      background-color: rgb(175, 180, 43);
+    }
+    .WeGoGym {
+      background-color: rgb(31, 123, 49);
+    }
+    .CuidadosComCabelo {
+      background-color: rgb(165, 39, 20);
+    }
+    .Escolas {
+      background-color: rgb(83, 12, 95);
+    }
+    .PontoDeOnibus {
+      background-color: rgb(15, 15, 15);
+    }
+    .Faculdade {
+      background-color: rgb(182, 182, 182);
+    }
+    .Mercados {
+      background-color: rgb(11, 141, 150);
+    }
+    .Parques {
+      background-color: rgb(46, 36, 33);
+    }
+    .centro {
+      background-color: rgb(129, 119, 23);
+    }
+    .hospitalMaisProximo {
+      background-color: rgb(94, 6, 73);
+    }
+    .Creche {
+      background-color: rgb(9, 113, 56);
+    }
+    .Havan {
+      background-color: rgb(230, 230, 19);
+    }
+    .Estadio {
+      background-color: rgb(11, 63, 152);
+    }
+    .mecanica {
+      background-color: rgb(11, 77, 61);
+    }
+    .Lifestyle {
+      background-color: rgb(230, 80, 0);
+    }
+  }
+  a{
+    text-decoration: none;
+      color: #fff8f8;
+      background-color: #2b2b2b;
+      padding: 2vh 8vh;
+      text-align: center;
+      border-radius: 1vh;
+      
+      &:hover {
+        background-color: #21c41b;
+        color: #2b2b2b;
+      }
+  }
+}
+.EnvoltadoImovelTitle {
+  text-align: center;
+  font-size: 5vh;
+  margin-bottom: 5vh;
+  position: relative;
+  top: 3vh;
+}
+.emvoltaDoImovelSubtitle {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ebeaea;
+    padding: 2vh;
+    margin-bottom: 3vh;
+    border-radius: 1vh;
+  }
