@@ -9,6 +9,7 @@ import DadosGerais from "../../Components/DadosGerais/DadosGerais";
 import AnaliseAmbiental from "../../Components/AnaliseAmbiental/AnaliseAmbiental";
 import PendenciasIptu from "../../Components/PendenciasIptu/PendenciasIptu";
 import Enchentes from "../../Components/Enchentes/Enchentes";
+import { Link } from "react-router-dom";
 
 export default function CondicionantesDadosJuridicos() {
   const {
@@ -38,7 +39,7 @@ export default function CondicionantesDadosJuridicos() {
     relevo,
     linkEarth,
     iptu,
-    handleOnClick,
+    LinkEarthEntornoDoImovel,
     enchente7mt,
     enchente8mt,
     enchente9mt,
@@ -103,7 +104,7 @@ export default function CondicionantesDadosJuridicos() {
               microzona={microzona}
               pavimentosMaximosPermitidos={pavimentos}
             />
-             <PendenciasIptu iptu={iptu} />
+            <PendenciasIptu iptu={iptu} />
           </section>
           <section className="Ambiental">
             <h2 className="titleSectionAmbinetal">Analise Ambiental</h2>
@@ -129,8 +130,14 @@ export default function CondicionantesDadosJuridicos() {
               nv4={enchente10mt}
             />
           </section>
-          <section>
-            <h3>Localização e pontos próximos ao imóvel</h3>
+          <h3 className="EnvoltadoImovelTitle">
+            Localização e pontos próximos ao imóvel
+          </h3>
+          <p className="emvoltaDoImovelSubtitle">
+            Conheça os pontos ao redor do imóvel que podem influênciar na
+            decisão de compra e precificação do ativo.
+          </p>
+          <section className="EnvoltaDoImovel">
             <iframe
               src="https://www.google.com/maps/d/u/0/embed?mid=1gO1npXJZM4rsYPiOJm-eXO_4tOHrZLI&ehbc=2E312F&noprof=1"
               width="640"
@@ -140,7 +147,84 @@ export default function CondicionantesDadosJuridicos() {
               loading="lazy"
               title="Google Maps"
             ></iframe>
-            <button onClick={handleOnClick}>Veja no earth</button>
+            <div className="Legendas">
+              <h3>Legenda do mapa</h3>
+              <div className="legendaCompletaDoArredorDoImol">
+                <div className="flexSection">
+                  <section className="Legend">
+                    <span className="Escolas"></span>
+                    <p>Escola</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Parques"></span>
+                    <p>Parques</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Mercados"></span>
+                    <p>Mercados</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Faculdade"></span>
+                    <p>Universiade</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="PontoDeOnibus"></span>
+                    <p>Ponto de ônibos</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="centro"></span>
+                    <p>Centro</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="CuidadosComCabelo"></span>
+                    <p>Cuidados com Cabelo</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="WeGoGym"></span>
+                    <p>Academias</p>
+                  </section>
+                </div>
+                <div className="flexSection">
+                  <section className="Legend">
+                    <span className="Petshop"></span>
+                    <p>Petshop</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="mecanica"></span>
+                    <p>Mecanica</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Padaria"></span>
+                    <p>Padaria</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="fisioterapia"></span>
+                    <p>Cuidados com a saúde</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="hospitalMaisProximo"></span>
+                    <p>Hospital mais próximo</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Creche"></span>
+                    <p>Creche</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Havan"></span>
+                    <p>Havan</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Estadio"></span>
+                    <p>Estadio</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Lifestyle"></span>
+                    <p>Lifestyle</p>
+                  </section>
+                </div>
+              </div>
+              <Link to={LinkEarthEntornoDoImovel}>Veja no Earth</Link>
+            </div>
           </section>
         </div>
       )}

@@ -49,11 +49,8 @@ export default function ReportContextProvider({ children }) {
       }, 4000);
     }
   };
-  const handleOnClick = (e) => {
-    e.preventDefault();
-    //https://earth.google.com/web/@-27.10815205,-48.9144618,23.43798021a,6139.88427919d,30y,0h,0t,0r/data=MigKJgokCiAxZ08xbnBYSlpNNHJzWVBpT0ptLWVYT180dE9IclpMSSAC 
-  }
 
+  const LinkEarthEntornoDoImovel = "https://earth.google.com/web/@-27.10815205,-48.9144618,23.43798021a,6139.88427919d,30y,0h,0t,0r/data=MigKJgokCiAxZ08xbnBYSlpNNHJzWVBpT0ptLWVYT180dE9IclpMSSAC";
   const imgHome = DadosAlteraveis.imagemDaHome;
   const clientName = DadosAlteraveis.clientName;
   const coordenadas = DadosAlteraveis.coordenadas;
@@ -140,6 +137,7 @@ export default function ReportContextProvider({ children }) {
     iptu,
     Rules,
     viabilidade,
+    LinkEarthEntornoDoImovel
   };
 
   return (
