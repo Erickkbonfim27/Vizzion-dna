@@ -33,6 +33,11 @@ export default function ReportSectUm() {
           <IsNotVerified />
         </div>
       )}
+      {Verified === null && (
+        <div>
+          <IsNotVerified />
+        </div>
+      )}
     </>
   )
 }

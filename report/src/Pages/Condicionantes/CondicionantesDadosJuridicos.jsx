@@ -233,6 +233,11 @@ export default function CondicionantesDadosJuridicos() {
           <IsNotVerified />
         </div>
       )}
+      {Verified === null && (
+        <div>
+          <IsNotVerified />
+        </div>
+      )}
     </>
   );
 }
