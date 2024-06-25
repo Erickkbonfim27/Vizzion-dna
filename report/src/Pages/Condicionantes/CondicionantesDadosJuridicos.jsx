@@ -44,6 +44,7 @@ export default function CondicionantesDadosJuridicos() {
     enchente9mt,
     enchente10mt,
     Rules,
+    viabilidade,
   } = useReportContext();
   let Verified = localStorage.getItem("@item");
   return (
@@ -91,6 +92,7 @@ export default function CondicionantesDadosJuridicos() {
               licensaAmbiental={licensaAmbiental}
               avcb={avcb}
               escrituraPublicaDeCompraeVenda={escrituraPublicaDeCompraeVenda}
+              viabilidade={viabilidade}
             />
             <DadosGerais
               loteMinimo={loteMinimo}
@@ -101,6 +103,7 @@ export default function CondicionantesDadosJuridicos() {
               microzona={microzona}
               pavimentosMaximosPermitidos={pavimentos}
             />
+             <PendenciasIptu iptu={iptu} />
           </section>
           <section className="Ambiental">
             <AnaliseAmbiental
@@ -109,7 +112,6 @@ export default function CondicionantesDadosJuridicos() {
               relevo={relevo}
               linkEarth={linkEarth}
             />
-            <PendenciasIptu iptu={iptu} />
           </section>
           <section className="Enchentes">
             <div className="text">

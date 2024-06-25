@@ -92,10 +92,8 @@ export default function ReportContextProvider({ children }) {
   const iptu = DadosAlteraveis.iptu;
   const mapa = DadosAlteraveis.mapa;
   const Rules = DadosAlteraveis.regrasDeUso;
+  const viabilidade = DadosAlteraveis.viabilidade;
 
-
-
-  
   
   const value = {
     imgHome,
@@ -141,6 +139,7 @@ export default function ReportContextProvider({ children }) {
     linkEarth,
     iptu,
     Rules,
+    viabilidade,
   };
 
   return (

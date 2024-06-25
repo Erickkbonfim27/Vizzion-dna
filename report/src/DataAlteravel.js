@@ -4,6 +4,9 @@ import enchente8mt from "./Data/Reportimages/Enchentes/enchente8mt.png";
 import enchente9mt from "./Data/Reportimages/Enchentes/enchente9mt.png";
 import enchente10mt from "./Data/Reportimages/Enchentes/enchente10mt.png";
 
+import matricula from './Data/Reportimages/ClientDocs/Matricula.pdf';
+import viabilidade from './Data/Reportimages/ClientDocs/viabilidade1.pdf'
+
 export const DadosAlteraveis = {
   passCode: "000-aaa",
   imagemDaHome: imgVar,
@@ -132,7 +135,7 @@ export const DadosAlteraveis = {
   habitese: "dontFind",
   cno: "dontFind",
   cnar: "dontFind",
-  matricula: "dontFind",
+  matricula,
   licensaAmbiental: "dontFind",
   avcb: "dontFind",
   escrituraPublicaDeCompraeVenda: "dontFind",
@@ -148,4 +151,5 @@ export const DadosAlteraveis = {
     "https://earth.google.com/web/@-27.10698407,-48.91510957,27.87887074a,244.1886874d,35y,9.41777135h,53.5497058t,360r/data=OgMKATA",
   iptu: "dontFind",
   mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
+  viabilidade,
 };
