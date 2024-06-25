@@ -7,19 +7,19 @@ export default function Enchentes({ nv1, nv2, nv3, nv4 }) {
       <div className="printsDosNiveis">
         <div className="enchenteSeteMetros">
           <img src={nv1} alt="" />
-          <h3>afetação de enchente com Rio a 7mts acima do nivel</h3>
+          <h3>afetação com Rio a 7mts acima do nivel</h3>
         </div>
         <div className="enchenteSeteMetros">
           <img src={nv2} alt="" />
-          <h3>afetação de enchente com Rio a 8mts acima do nivel</h3>
+          <h3>afetação com Rio a 8mts acima do nivel</h3>
         </div>
         <div className="enchenteSeteMetros">
           <img src={nv3} alt="" />
-          <h3>afetação de enchente com Rio a 9mts acima do nivel</h3>
+          <h3>afetação com Rio a 9mts acima do nivel</h3>
         </div>
         <div className="enchenteSeteMetros">
           <img src={nv4} alt="" />
-          <h3>afetação de enchente com Rio a 10mts acima do nivel</h3>
+          <h3>afetação com Rio a 10mts acima do nivel</h3>
         </div>
       </div>
       <div>
