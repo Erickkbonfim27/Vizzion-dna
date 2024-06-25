@@ -22,14 +22,20 @@ export default function Enchentes({ nv1, nv2, nv3, nv4 }) {
           <h3>afetação com Rio a 10mts acima do nivel</h3>
         </div>
       </div>
-      <div>
+      <div className="MapaDeCartaDeEnchentes">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1D5zBjbOXw4uVlX38O_9IBvELuHs&ehbc=2E312F"
-          width="640"
-          height="480"
+          width="600"
+          height="400"
           style={{ border: 0 }}
           loading="async"
         ></iframe>
+        <div className="Texts">
+          <h2>
+            Ficou com alguma dúvida ou curiosidade referente à enchente?
+          </h2>
+          <p>Este mapa ao lado comtempla a região geral de brusque com a carta enchente, sendo possível visualizar a afetação de 7 à 15 metros acima do nível do Rio.</p>
+        </div>
       </div>
     </div>
   );
