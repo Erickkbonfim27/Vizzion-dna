@@ -7,6 +7,8 @@ import Home from "../home/home";
 import ReportSectUm from "../Report-p1/ReportSectUm";
 import CondicionantesDadosJuridicos from '../Condicionantes/CondicionantesDadosJuridicos';
 import NotFound from "../NotFound/NotFound";
+import Deficiencias from "../Deficiencias/Deficiencias";
+import Potenciais from "../Potenciais/Potenciais";
 
 export default function ContextIndexavel() {
   return (
@@ -17,6 +19,8 @@ export default function ContextIndexavel() {
           <Route path={PATHS.Home} element={<Home />} />
           <Route path={PATHS.SecaoUm} element={<ReportSectUm />} />
           <Route path={PATHS.SecaoDeCondicionais} element={<CondicionantesDadosJuridicos />} /> 
+          <Route path={PATHS.deficiencias} element={<Deficiencias />} />
+          <Route path={PATHS.potenciais} element={<Potenciais />} />
         </Routes>
       </Router>
     </ReportContextProvider>

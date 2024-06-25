@@ -20,7 +20,7 @@ export const DadosAlteraveis = {
       Message: "Doação de 1/3 do imóvel para",
       PessoasEnvolvida: [
         { nome: "Walmir Merisio" },
-        { nome: "Ledy Walendosky Merisio" },
+        { nome: "Lady Walendosky Merisio" },
       ],
       CodigoDaAnotacao: "R. 1-23.543",
     },
@@ -103,7 +103,7 @@ export const DadosAlteraveis = {
   ],
   proprietariosAtuais: [
     {
-      proprietarios: ["Walmir Merisio", "Ledy Walendosky Merisio"],
+      proprietarios: ["Walmir Merisio", "Lady Walendosky Merisio"],
       MetragemAprox: "752,47m²",
       Percentual: "33.33%",
     },
