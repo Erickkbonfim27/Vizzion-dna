@@ -1,5 +1,14 @@
 .Condicionantes {
   font-family: inter;
+  .Ambiental{
+    .titleSectionAmbinetal{
+        text-align: center;
+        font-size: 5vh;
+        margin-bottom: 7vh;
+        position: relative;
+        top: 3vh;
+    }
+  }
 }
 .textApresentation {
   margin: 0 auto;
@@ -94,9 +103,9 @@
   margin-bottom: 5vh;
 }
 .Downloadable {
-    text-align: left;
-    width: 100%;
-    
+  text-align: left;
+  width: 100%;
+
   .card {
     width: 5vh;
   }
@@ -115,45 +124,118 @@
   padding: 5px 10px;
   text-decoration: none;
   border-radius: 3px;
-  &:hover{
+  &:hover {
     background-color: #21c41b;
     color: #2b2b2b;
   }
 }
-.GeneralDataBody{
-    width: 100%;
-    min-width: 80vh;
-    background-color: #fff8f8;
-    padding: 2vh;
-    border-radius: 1vh;
-    box-shadow: rgba(99, 99, 99, 0.199) 0px 2px 8px 0px;
+.GeneralDataBody {
+  width: 100%;
+  min-width: 80vh;
+  background-color: #fff8f8;
+  padding: 2vh;
+  border-radius: 1vh;
+  box-shadow: rgba(99, 99, 99, 0.199) 0px 2px 8px 0px;
 
-    h3{
-        &::after{
-            content: '';
-            width: 30vh;
-            height: 0.5vh;
-            background-color: #21c41b;
-            display: block;
-            border-radius: 1vh;
-            margin-bottom: 1.5vh;
-        }
+  h3 {
+    &::after {
+      content: "";
+      width: 30vh;
+      height: 0.5vh;
+      background-color: #21c41b;
+      display: block;
+      border-radius: 1vh;
+      margin-bottom: 1.5vh;
     }
-    
-    .infos{
-        display: flex;
-        li{
-            list-style-type: none;
-        }
-        .col1{
-            width: 50%;
+  }
 
-        }
+  .infos {
+    display: flex;
+    li {
+      list-style-type: none;
     }
+    .col1 {
+      width: 50%;
+    }
+  }
 }
-.PendenciasIptu{
-    width: 100%;
-    padding: 2vh;
-    margin-left: 1.5vh;
-    border-radius: 1vh;
+.PendenciasIptu {
+  width: 100%;
+  padding: 2vh;
+  margin-left: 1.5vh;
+  border-radius: 1vh;
+}
+.AnaliseAmbiental {
+  width: 85%;
+  display: flex;
+  gap: 5vh;
+  align-items: center;
+  margin: 0 auto;
+
+  .dataSet {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .Legenda {
+      h3 {
+        text-transform: uppercase;
+        font-size: 2.4vh;
+        color: #2b2b2b;
+        margin-bottom: 1vh;
+      }
+      .AreasVerdes {
+        display: flex;
+        gap: 1vh;
+        align-items: center;
+        .AreasVerdesCollorBox {
+          width: 2vh;
+          height: 2vh;
+          background-color: #c4371b;
+          border: 1px solid;
+        }
+      }
+      .App {
+        display: flex;
+        gap: 1vh;
+        align-items: center;
+        .AppCollorBox {
+          width: 2vh;
+          height: 2vh;
+          background-color: #fa8100;
+          border: 1px solid;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff8f8;
+      background-color: #2b2b2b;
+      padding: 2vh 4vh;
+      text-align: center;
+      border-radius: 1vh;
+      &:hover {
+        background-color: #21c41b;
+        color: #2b2b2b;
+      }
+    }
+    .Infos {
+      h3 {
+        text-decoration: none;
+        color: #2b2b2b;
+        text-transform: uppercase;
+        padding: 0.4vh;
+        background-color: #21c41b;
+        width: 100%;
+        min-width: 70vh;
+        text-align: center;
+        border-radius: 0.5vh;
+
+      }
+      li{
+        list-style-type: none;
+        margin-top: 1vh;
+      }
+    }
+  }
 }
