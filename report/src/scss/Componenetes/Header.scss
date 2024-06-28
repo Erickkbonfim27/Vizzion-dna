@@ -1,39 +1,110 @@
-.Header{
+.Header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 10vh;
-    font-family: inter;
+    font-family: Inter, sans-serif;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
-
-    ul{
-        list-style-type: none;
-        display: flex;
-        gap: 10vh;
-
-        li{
-            padding: 1vh 2vh; 
-            border-radius: 1vh;
-            a{
-                color: #000;
-                text-decoration: none;
-            }
-
-            &:hover{
-                background-color: #315B49;
-                a{
-                    color: #8AD31A;
-                }
-            }
-        }
+    position: relative;
+    font-family: inter;
+    a{
+      text-decoration: none;
+      color: #000;
+      padding: 2vh 2vh;
     }
-
-    img{
-        width: 20vh;
-    }
-}
-
-.selecionado{
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 2px;
+    width: 25px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .nav-list {
+    align-items: center !important;
+    list-style-type: none;
+    display: flex;
+    gap: 10vh;
+  }
+  
+  .nav-item {
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+  }
+  
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav-item:hover {
+    background-color: #315B49;
+  }
+  
+  .nav-item:hover .nav-link {
+    color: #8AD31A;
+  }
+  
+  .selecionado {
     background-color: #8AD31A;
-}
+    padding: 1vh;
+    border-radius: 1vh;
+  }
+  
+  img {
+    width: 20vh;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 900px) {
+    .Header {
+      justify-content: space-around;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 10vh;
+      right: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+      z-index: 1000;
+    }
+  
+    .nav-list.open {
+      display: flex;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-item:hover {
+      background-color: #315B49;
+    }
+  
+    .nav-item:hover .nav-link {
+      color: #8AD31A;
+    }
+  
+    img {
+      width: 15vh;
+    }
+  }
+  

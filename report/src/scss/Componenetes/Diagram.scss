@@ -1,4 +1,4 @@
-.bodySectionGridContainer{
+.bodySectionGridContainer {
   margin-bottom: 3vh;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .annotation {
-  background-color: #D9F6DF;
+  background-color: #d9f6df;
   border-radius: 5px;
   min-height: 15vh;
   display: flex;
@@ -30,10 +30,10 @@
 .HeadderCard {
   display: flex;
   justify-content: space-between;
-  background-color: #315B49;
+  background-color: #315b49;
   padding: 1.3vh 1vh;
   border-radius: 1vh 1vh 0 0;
-  color: #8AD31A;
+  color: #8ad31a;
   align-items: center;
 
   .order {
@@ -43,10 +43,10 @@
   .codigo {
     text-transform: uppercase;
     font-size: 1.4vh;
-    background-color: #D9F6DF;
+    background-color: #d9f6df;
     padding: 0.5vh 1.5vh;
     border-radius: 0.4vh;
-    color: #315B49; 
+    color: #315b49;
   }
 }
 
@@ -58,7 +58,7 @@
     text-align: justify;
     padding: 0.5vh 1vh;
   }
-  
+
   .ListClients {
     margin-left: 2vh;
     list-style-type: none;
@@ -67,7 +67,7 @@
   }
 }
 
-.HistoricTitle{
+.HistoricTitle {
   width: 75%;
   margin: 0 auto;
   text-align: center;
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
 
-  a{
+  a {
     text-decoration: none;
     color: #0b301f;
     background-color: #12c80f;
@@ -89,9 +89,65 @@
     font-weight: bold;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-    &:hover{
+    &:hover {
       background-color: #0b301f;
       color: #12c80f;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .bodySectionGridContainer {
+    width: 100%;
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bodySectionGridContainer {
+    width: 100%;
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .HistoricTitle {
+    width: 100%;
+
+    font-size: 2vh;
+    flex-direction: column !important;
+
+    a {
+      font-size: 1.6vh;
+      padding: 1vh 3vh;
+      margin-top: 1vh;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bodySectionGridContainer {
+    width: 100%;
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .HistoricTitle {
+    width: 80%;
+    font-size: 2vh;
+    flex-direction: column !important;
+    margin: 0 auto;
+    margin-top: 2vh;
+    a {
+      font-size: 1.6vh;
+      padding: 1vh 3vh;
+      margin-top: 1vh;
     }
   }
 }
