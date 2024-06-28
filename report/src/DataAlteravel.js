@@ -5,7 +5,18 @@ import enchente9mt from "./Data/Reportimages/Enchentes/enchente9mt.png";
 import enchente10mt from "./Data/Reportimages/Enchentes/enchente10mt.png";
 
 import matricula from './Data/Reportimages/ClientDocs/Matricula.pdf';
-import viabilidade from './Data/Reportimages/ClientDocs/viabilidade1.pdf'
+import viabilidade from './Data/Reportimages/ClientDocs/viabilidade1.pdf';
+var imgagemDoSol = 's';
+
+const formatCurrency = (value) => {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
+};
+
 
 export const DadosAlteraveis = {
   passCode: "000-aaa",
@@ -152,4 +163,73 @@ export const DadosAlteraveis = {
   iptu: ['sem pendências encontradas'],
   mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
   viabilidade,
+  DadosDemograficos:{
+    Populacao:{
+      densidadeDemografica: 496.65,
+      SalarioMedio: 2.5,
+      PessoalOcupado: 46.68,
+      PercentualPopulacaoRendimentoPerCapitaDeMeioSalarop: 19.8,
+      
+      Educacao:{
+        TaxaDeEscolarizacao6a14: 98,
+        MatriculaEnsinoMedio: 5.119,
+        MatriculaEnsinoFundamental: 17.762,
+      }
+
+    },
+    Economia:{
+      PibPerCapita: formatCurrency(62044,42),
+      PercentualDasReceitasOriundasDeFontesExternas: 58,
+      Idh: 0.795,
+    },
+    MeioAmbiente:{
+      AreaUrbanizadaEmKm2:51.17,
+      PercentoEsgotamentoSanitarioAdequado:89,
+      ArborizacaoDeViasPublicas: 36.9,
+       
+    },
+    RegionalData:{
+      IntensidadeDoTransito: 'Moderado à intenso',
+      EspacoAereo: 'Sem informações específicas indicando presença de restrição aeronáutica',
+      DistanciaDoEspacoMaisProximoDeBemEstar: 'noDataAvaliable',
+      NascimentoSolar: {
+          direcao: 'Direita',
+          comoInfluencia: '',
+          imgIlustrativaDoLocalInformandoNascimentoDoSol: imgagemDoSol,
+      },
+    },
+  },
+  Variaveis: {
+    DensidadeDePessoasJuridicas: 'Sem dados ainda!',
+    AcessibilidadeDoSistemaViario: 'Sem dados ainda!',
+    ComplexidadeUrbana: {
+      SuperficieNãoResidencial: 'Sem dados ainda!',
+      ContinuidadeEspacialDaVia: 'Sem dados ainda!',
+    },
+    BioDiversidade: {
+      espacoVerdePorHabitante: 'Sem dados ainda!',
+      proximidadeSimultaneaAEspacosVerdes: 'Sem dados ainda!',
+    },
+    AcessoSimultaneoAEquipamentosBasicos:{
+      RaioDeAnalise: 'Sem dados ainda!',
+      mercado: 'Sem dados ainda!',
+      centroDeSaude: 'Sem dados ainda!',
+      centroDeBemEstarSocial: 'Sem dados ainda!',
+      centroCivico: 'Sem dados ainda!',
+      centroCultural: 'Sem dados ainda!',
+      redeDeCiclovia: 'Sem dados ainda!',
+      centroDeEducacaoPrimaria: 'Sem dados ainda!',
+      centroDeEducacaoSecundaria: 'Sem dados ainda!',
+      servicosPublicos: 'Sem dados ainda!',
+      paradasDeTransportePublico: 'Sem dados ainda!',
+    },
+    SaneamentoBasico:{
+      agua: 'Sem dados ainda!',
+      esgoto: 'Sem dados ainda!',
+      lixo: 'Sem dados ainda!',
+      HistoricoDeInundção: 'Sem dados ainda!',
+      TaxaDeCriminalidadeNoLocal: 'Sem dados ainda!',
+      HistoricoDeDeslizamento: 'Sem dados ainda!',
+    }
+  },
 };

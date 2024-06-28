@@ -9,6 +9,8 @@ import CondicionantesDadosJuridicos from '../Condicionantes/CondicionantesDadosJ
 import NotFound from "../NotFound/NotFound";
 import Deficiencias from "../Deficiencias/Deficiencias";
 import Potenciais from "../Potenciais/Potenciais";
+import DemografiaRegional from "../DemografiaRegional/DemografiaRegional";
+import Contato from "../Contato/Contato";
 
 export default function ContextIndexavel() {
   return (
@@ -21,6 +23,8 @@ export default function ContextIndexavel() {
           <Route path={PATHS.SecaoDeCondicionais} element={<CondicionantesDadosJuridicos />} /> 
           <Route path={PATHS.deficiencias} element={<Deficiencias />} />
           <Route path={PATHS.potenciais} element={<Potenciais />} />
+          <Route path={PATHS.demografia} element={<DemografiaRegional />} />
+          <Route path={PATHS.contatos} element={<Contato />} />
         </Routes>
       </Router>
     </ReportContextProvider>

@@ -90,10 +90,26 @@ export default function ReportContextProvider({ children }) {
   const mapa = DadosAlteraveis.mapa;
   const Rules = DadosAlteraveis.regrasDeUso;
   const viabilidade = DadosAlteraveis.viabilidade;
+  const DensidadeDemografica = DadosAlteraveis.DadosDemograficos.Populacao.densidadeDemografica;
+  const SalarioMedioNoLocal = 1.640 * DadosAlteraveis.DadosDemograficos.Populacao.SalarioMedio;
+  const PessoalOcupado = DadosAlteraveis.DadosDemograficos.Populacao.PessoalOcupado;
+  const PopComMeioSalarioDeRendaPerCapta = DadosAlteraveis.DadosDemograficos.Populacao.PercentualPopulacaoRendimentoPerCapitaDeMeioSalarop;
+  const PibPerCaptaAproxBrusque = DadosAlteraveis.DadosDemograficos.Economia.PibPerCapita;
+  const PercentualDasReceitasDeFontesExternas = DadosAlteraveis.DadosDemograficos.Economia.PercentualDasReceitasOriundasDeFontesExternas;
+  const IdhMedio = DadosAlteraveis.DadosDemograficos.Economia.Idh;
+  const AreaUrbanizadaEmKm2 = DadosAlteraveis.DadosDemograficos.MeioAmbiente.AreaUrbanizadaEmKm2;
+  const ArborizacaoDeViasPublicas = DadosAlteraveis.DadosDemograficos.MeioAmbiente.ArborizacaoDeViasPublicas;
+  const intencidadeDoTransito = DadosAlteraveis.DadosDemograficos.RegionalData.IntensidadeDoTransito;
+  const DistanciaDoEspacoDeBemEstarMaisProximo = DadosAlteraveis.DadosDemograficos.RegionalData.DistanciaDoEspacoMaisProximoDeBemEstar;
+  const EspacoAereo = DadosAlteraveis.DadosDemograficos.RegionalData.EspacoAereo;
+  const NascimentoSolar = DadosAlteraveis.DadosDemograficos.RegionalData.NascimentoSolar;
 
   
   const value = {
     imgHome,
+    EspacoAereo,
+    DistanciaDoEspacoDeBemEstarMaisProximo,
+    intencidadeDoTransito,
     clientName,
     coordenadas,
     Logo,
@@ -137,7 +153,18 @@ export default function ReportContextProvider({ children }) {
     iptu,
     Rules,
     viabilidade,
-    LinkEarthEntornoDoImovel
+    LinkEarthEntornoDoImovel,
+    DensidadeDemografica,
+    SalarioMedioNoLocal,
+    PessoalOcupado,
+    PopComMeioSalarioDeRendaPerCapta,
+    PibPerCaptaAproxBrusque,
+    PercentualDasReceitasDeFontesExternas,
+    IdhMedio,
+    AreaUrbanizadaEmKm2,
+    ArborizacaoDeViasPublicas,
+    NascimentoSolar,
+
   };
 
   return (

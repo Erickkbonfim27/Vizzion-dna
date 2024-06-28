@@ -11,7 +11,6 @@ export default function ReportSectUm() {
   const { historico, proprietariosAtuais } = useReportContext();
   let Verified = localStorage.getItem('@item')
 
-
   return (
     <>
       {Verified === 'True' && (

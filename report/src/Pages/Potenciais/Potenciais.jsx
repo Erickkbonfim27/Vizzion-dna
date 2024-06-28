@@ -5,8 +5,6 @@ export default function Potenciais() {
   return (
     <div>
         <Header selected='potenciais' />
-
-
         potenciais
     </div>
   )

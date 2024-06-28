@@ -18,6 +18,12 @@ export default function Header({ selected }) {
         <li className={selected === "potenciais" ? "selecionado" : ""}>
           <a href={PATHS.potenciais}> Potenciais </a>
         </li>
+        <li className={selected === "demografia" ? "selecionado" : ""}>
+          <a href={PATHS.demografia}> Demografia Regional </a>
+        </li>
+        <li className={selected === "contato" ? "selecionado" : ""}>
+          <a href={PATHS.contatos}> Contato </a>
+        </li>
       </ul>
       <img src={LogoImage} alt="logo" />
     </div>
