@@ -7,4 +7,5 @@ export const PATHS = {
     faq: '/faq',
     contatos: '/contatos',
     equipeVizzion: '/equipeVizzion',
+    demografia: '/demografia-regional',
 }

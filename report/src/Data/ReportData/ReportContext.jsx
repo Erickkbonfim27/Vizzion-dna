@@ -90,6 +90,8 @@ export default function ReportContextProvider({ children }) {
   const mapa = DadosAlteraveis.mapa;
   const Rules = DadosAlteraveis.regrasDeUso;
   const viabilidade = DadosAlteraveis.viabilidade;
+  const Data = DadosAlteraveis.IdadeMediaNa
+
 
   
   const value = {
@@ -137,7 +139,8 @@ export default function ReportContextProvider({ children }) {
     iptu,
     Rules,
     viabilidade,
-    LinkEarthEntornoDoImovel
+    LinkEarthEntornoDoImovel,
+    Data,
   };
 
   return (
