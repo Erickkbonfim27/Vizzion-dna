@@ -6,6 +6,7 @@ import enchente10mt from "./Data/Reportimages/Enchentes/enchente10mt.png";
 
 import matricula from './Data/Reportimages/ClientDocs/Matricula.pdf';
 import viabilidade from './Data/Reportimages/ClientDocs/viabilidade1.pdf';
+var imgagemDoSol = 's';
 
 const formatCurrency = (value) => {
   return new Intl.NumberFormat('pt-BR', {
@@ -186,6 +187,49 @@ export const DadosAlteraveis = {
       PercentoEsgotamentoSanitarioAdequado:89,
       ArborizacaoDeViasPublicas: 36.9,
        
+    },
+    RegionalData:{
+      IntensidadeDoTransito: 'Moderado à intenso',
+      EspacoAereo: 'Sem informações específicas indicando presença de restrição aeronáutica',
+      DistanciaDoEspacoMaisProximoDeBemEstar: 'noDataAvaliable',
+      NascimentoSolar: {
+          direcao: 'Direita',
+          comoInfluencia: '',
+          imgIlustrativaDoLocalInformandoNascimentoDoSol: imgagemDoSol,
+      },
+    },
+  },
+  Variaveis: {
+    DensidadeDePessoasJuridicas: 'Sem dados ainda!',
+    AcessibilidadeDoSistemaViario: 'Sem dados ainda!',
+    ComplexidadeUrbana: {
+      SuperficieNãoResidencial: 'Sem dados ainda!',
+      ContinuidadeEspacialDaVia: 'Sem dados ainda!',
+    },
+    BioDiversidade: {
+      espacoVerdePorHabitante: 'Sem dados ainda!',
+      proximidadeSimultaneaAEspacosVerdes: 'Sem dados ainda!',
+    },
+    AcessoSimultaneoAEquipamentosBasicos:{
+      RaioDeAnalise: 'Sem dados ainda!',
+      mercado: 'Sem dados ainda!',
+      centroDeSaude: 'Sem dados ainda!',
+      centroDeBemEstarSocial: 'Sem dados ainda!',
+      centroCivico: 'Sem dados ainda!',
+      centroCultural: 'Sem dados ainda!',
+      redeDeCiclovia: 'Sem dados ainda!',
+      centroDeEducacaoPrimaria: 'Sem dados ainda!',
+      centroDeEducacaoSecundaria: 'Sem dados ainda!',
+      servicosPublicos: 'Sem dados ainda!',
+      paradasDeTransportePublico: 'Sem dados ainda!',
+    },
+    SaneamentoBasico:{
+      agua: 'Sem dados ainda!',
+      esgoto: 'Sem dados ainda!',
+      lixo: 'Sem dados ainda!',
+      HistoricoDeInundção: 'Sem dados ainda!',
+      TaxaDeCriminalidadeNoLocal: 'Sem dados ainda!',
+      HistoricoDeDeslizamento: 'Sem dados ainda!',
     }
-  }
+  },
 };

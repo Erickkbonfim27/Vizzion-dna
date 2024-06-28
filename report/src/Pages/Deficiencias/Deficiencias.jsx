@@ -32,7 +32,7 @@ export default function Deficiencias() {
     <div className='DeficienciasBody'>
         <Header selected='deficiencias' />    
         <div className='DeficienciasDoImovel'>
-
+            
         </div>
     </div>
   )
