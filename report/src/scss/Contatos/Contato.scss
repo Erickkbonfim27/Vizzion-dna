@@ -1,0 +1,161 @@
+.Contato{
+    width: 100%;
+    .ContactBody{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6vh;
+        font-family: inter;
+
+        
+        .AcessLinks{
+            width: 45%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .Texts{
+                .PrincipalTitle{
+                    font-size: 4vh;
+                    &::after{
+                        content: '';
+                        display: flex;
+                        width: 15vh;
+                        height: 0.5vh;
+                        border-radius: 0.6vh;
+                        background-color: rgb(29, 238, 14);
+                    }
+                    margin-bottom: 3vh;
+                }
+                p{
+                    width: 85%;
+                    text-align: justify;
+                    background-color: rgb(248, 248, 248);
+                    padding: 1.5vh 2.5vh;
+                    border-radius: 1vh;
+                }
+            }
+            .WhatsappCard{
+                font-size: 5vh;
+                display: flex;
+                align-items: center;
+                background-color:  rgb(14, 74, 10);
+                gap: 2vh;
+                color: rgb(237, 250, 236);
+                padding: 1vh 2vh;
+                border-radius: 1vh;
+                a{
+                    font-size: 2vh;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: rgb(29, 238, 14);
+                }
+                &:hover{
+                    background-color: rgb(29, 238, 14);
+                    color: rgb(14, 74, 10);
+                    a{
+                        color:rgb(14, 74, 10);
+                    }
+                }
+            }
+            .Email{
+                font-size: 5vh;
+                display: flex;
+                align-items: center;
+                background-color:  rgb(14, 74, 10);
+                gap: 2vh;
+                color: rgb(237, 250, 236);
+                padding: 1vh 2vh;
+                border-radius: 1vh;
+                a{
+                    font-size: 2vh;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: rgb(29, 238, 14);
+                }
+                &:hover{
+                    background-color: rgb(29, 238, 14);
+                    color: rgb(14, 74, 10);
+                    a{
+                        color:rgb(14, 74, 10);
+                    }
+                }
+            }
+            .Instagram{
+                font-size: 5vh;
+                display: flex;
+                align-items: center;
+                background-color:  rgb(14, 74, 10);
+                gap: 2vh;
+                color: rgb(237, 250, 236);
+                padding: 1vh 2vh;
+                border-radius: 1vh;
+                a{
+                    font-size: 2vh;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: rgb(29, 238, 14);
+                }
+                &:hover{
+                    background-color: rgb(29, 238, 14);
+                    color: rgb(14, 74, 10);
+                    a{
+                        color:rgb(14, 74, 10);
+                    }
+                }
+            }
+        }
+        .SocialMedia{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+
+    .ContactBody{
+        width: 85% !important;
+        margin: 0 auto;
+        flex-direction: column;
+
+        .AcessLinks{
+            width: 90% !important;
+
+            .Texts{
+                p{
+                    width: 90%;
+                    text-align: justify;
+                    background-color: rgb(248, 248, 248);
+                    padding: 1.5vh 2.5vh;
+                    border-radius: 1vh;
+                    margin-bottom: 2vh;
+                }
+            }
+
+            .WhatsappCard{
+                font-size: 1.4vh;
+                a{
+                    font-size: 1.4vh;
+                }
+            }
+            .Email{
+                font-size: 1.4vh;
+                a{
+                    font-size: 1.4vh;
+                }
+            }
+            .Instagram{
+                font-size: 1.4vh;
+                a{
+                    font-size: 1.4vh;
+                }
+            }
+
+        }
+        .SocialMedia{
+            margin-top: 5vh;
+        }
+
+    }
+}
