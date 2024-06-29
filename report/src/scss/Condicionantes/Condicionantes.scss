@@ -95,9 +95,9 @@
 .DadosGerais {
   width: 85%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 6vh;
   position: relative;
   top: 3vh;
   margin-bottom: 5vh;
@@ -105,6 +105,7 @@
 .Downloadable {
   text-align: left;
   width: 100%;
+  
 
   .card {
     width: 5vh;
@@ -131,7 +132,6 @@
 }
 .GeneralDataBody {
   width: 100%;
-  min-width: 80vh;
   background-color: #fff8f8;
   padding: 2vh;
   border-radius: 1vh;
@@ -151,6 +151,7 @@
 
   .infos {
     display: flex;
+    gap: 3vh;
     li {
       list-style-type: none;
     }
@@ -165,6 +166,7 @@
   margin-left: 1.5vh;
   border-radius: 1vh;
 }
+
 .AnaliseAmbiental {
   width: 85%;
   display: flex;
@@ -227,7 +229,7 @@
         padding: 0.4vh;
         background-color: #21c41b;
         width: 100%;
-        min-width: 70vh;
+        min-width: 70%;
         text-align: center;
         border-radius: 0.5vh;
       }
@@ -316,25 +318,25 @@
   justify-content: space-around;
   align-items: center;
 
-  .legendaCompletaDoArredorDoImol{
+  .legendaCompletaDoArredorDoImol {
     width: 100%;
-    min-width: 60vh;
     display: flex;
+    gap: 10vh;
     justify-content: space-between;
     margin-bottom: 2vh;
   }
-  h3{
+  h3 {
     text-transform: uppercase;
     font-size: 3vh;
     margin-bottom: 4vh;
 
-    &::after{
-        display: flex;
-        content: '';
-        width: 10vh;
-        height: 0.5vh;
-        border-radius: 1vh;
-        background-color: #21c41b;
+    &::after {
+      display: flex;
+      content: "";
+      width: 10vh;
+      height: 0.5vh;
+      border-radius: 1vh;
+      background-color: #21c41b;
     }
   }
 
@@ -344,8 +346,8 @@
     gap: 1vh;
     margin-bottom: 1vh;
     span {
-      width: 2.2vh;
-      height: 2.2vh;
+      width: 20px !important;
+      height: 20px !important;
     }
     .fisioterapia {
       background-color: rgb(15, 157, 88);
@@ -402,18 +404,18 @@
       background-color: rgb(230, 80, 0);
     }
   }
-  a{
+  a {
     text-decoration: none;
-      color: #fff8f8;
-      background-color: #2b2b2b;
-      padding: 2vh 8vh;
-      text-align: center;
-      border-radius: 1vh;
-      
-      &:hover {
-        background-color: #21c41b;
-        color: #2b2b2b;
-      }
+    color: #fff8f8;
+    background-color: #2b2b2b;
+    padding: 2vh 8vh;
+    text-align: center;
+    border-radius: 1vh;
+
+    &:hover {
+      background-color: #21c41b;
+      color: #2b2b2b;
+    }
   }
 }
 .EnvoltadoImovelTitle {
@@ -424,11 +426,245 @@
   top: 3vh;
 }
 .emvoltaDoImovelSubtitle {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #ebeaea;
-    padding: 2vh;
-    margin-bottom: 3vh;
-    border-radius: 1vh;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ebeaea;
+  padding: 2vh;
+  margin-bottom: 3vh;
+  border-radius: 1vh;
+}
+
+@media screen and (max-width: 600px) {
+  .Condicionantes{
+    width: 100% !important;
   }
+  .textApresentation {
+    width: 90%;
+    flex-direction: column !important;
+    p {
+      width: 100% !important;
+      text-align: justify;
+      margin-bottom: 1vh !important;
+    }
+    .Permitted {
+      width: 85% !important;
+      box-sizing: border-box;
+      padding: 1vh !important;
+      border-radius: 0.3vh;
+
+      .holl {
+        p {
+          font-size: 1.5vh;
+        }
+      }
+    }
+  }
+  .RestricoesZoneamento {
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+
+    .Restricoes {
+      width: 85% !important;
+      margin: 0 auto;
+      margin-bottom: 2vh;
+    }
+
+    .RegDowData {
+      width: 85% !important;
+      margin: 0 auto;
+    }
+  }
+  .DadosGerais {
+    display: flex !important;
+    flex-direction: column !important;
+
+    .GeneralDataBody {
+      min-width: none;
+      max-width: 80% !important;
+      min-width: none !important;
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .Ambiental {
+    .titleSectionAmbinetal{
+      font-size: 3vh;
+      text-align: center;
+    }
+    
+    .AnaliseAmbiental {
+      display: flex;
+      flex-direction: column;
+
+
+      iframe {
+        display: flex;
+        width: 90% !important;
+        margin: 0 auto;
+      }
+      .dataSet{
+        width: 80% !important;
+        margin: 0 auto;
+
+        .infos{
+          min-width: none;
+          max-width: 300px !important;
+          width: 80% !important;
+        }
+      }
+
+    }
+  }
+  .Enchentes{
+  
+    .printsDosNiveis{
+      width: 95%;
+      display: flex !important;
+      flex-direction: column !important;
+      img{
+        width: 100% !important;
+      }
+      .enchenteSeteMetros{
+        margin: 0 auto;
+        gap: 3vh;
+        flex-direction: column;
+      }
+    }
+  }
+  .MapaDeCartaDeEnchentes {
+    flex-direction: column;
+    iframe{
+      width: 90% !important;
+    }
+
+    .Texts{
+      width: 90% !important;
+      text-align: justify;
+      margin-top: 2vh !important;
+      margin-bottom: 2vh !important;
+    }
+  }
+  .EnvoltaDoImovel{
+    width: 90% !important;
+    margin: 0 auto;
+    flex-direction: column-reverse !important;
+    
+    iframe{
+      width: 90% !important;
+      margin-top: 6vh !important;
+    }
+    .legendaCompletaDoArredorDoImol{
+      width: 90% !important;
+      min-width: none !important;
+      flex-direction: column;
+      gap: 0vh !important;
+      
+      .Legend{
+        span{
+          width: 20px !important;
+          height: 20px !important;
+        }
+      }
+
+      a{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+      }
+
+    }
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .Condicionantes{
+    width: 100% !important;
+  }
+  .textApresentation {
+    width: 90%;
+    flex-direction: column !important;
+    p {
+      width: 100% !important;
+      text-align: justify;
+      margin-bottom: 1vh !important;
+    }
+    .Permitted {
+      width: 85% !important;
+      box-sizing: border-box;
+      padding: 1vh !important;
+      border-radius: 0.3vh;
+
+      .holl {
+        p {
+          font-size: 1.5vh;
+        }
+      }
+    }
+  }
+  .RestricoesZoneamento {
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+
+    .Restricoes {
+      width: 85% !important;
+      margin: 0 auto;
+      margin-bottom: 2vh;
+    }
+
+    .RegDowData {
+      width: 85% !important;
+      margin: 0 auto;
+    }
+  }
+  .DadosGerais {
+    display: flex !important;
+    flex-direction: column !important;
+
+    .GeneralDataBody {
+      min-width: none;
+      max-width: 80% !important;
+      min-width: none !important;
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .Ambiental {
+    .titleSectionAmbinetal{
+      font-size: 3vh;
+      text-align: center;
+    }
+    
+    .AnaliseAmbiental {
+      display: flex;
+      flex-direction: column;
+
+
+      iframe {
+        display: flex;
+        width: 90% !important;
+        margin: 0 auto;
+      }
+      .dataSet{
+        width: 80% !important;
+        margin: 0 auto;
+
+        .infos{
+          min-width: none;
+          max-width: 300px !important;
+          width: 80% !important;
+        }
+      }
+
+    }
+  }
+}
