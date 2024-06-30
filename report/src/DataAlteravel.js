@@ -191,7 +191,7 @@ export const DadosAlteraveis = {
     RegionalData:{
       IntensidadeDoTransito: 'Moderado à intenso',
       EspacoAereo: 'Sem informações específicas indicando presença de restrição aeronáutica',
-      DistanciaDoEspacoMaisProximoDeBemEstar: 'noDataAvaliable',
+      EspacoDeEstarPorM2Proximo: 'noDataAvaliable',
       NascimentoSolar: {
           direcao: 'Direita',
           comoInfluencia: '',
@@ -200,14 +200,15 @@ export const DadosAlteraveis = {
     },
   },
   Variaveis: {
-    DensidadeDePessoasJuridicas: 'Sem dados ainda!',
-    AcessibilidadeDoSistemaViario: 'Sem dados ainda!',
+    MesclaDeUsosDoSolo: 'Sem daados ainda!',
+    DensidadeDePessoasJuridicas: 'Sem daados ainda!',
+    AcessSistemaViario: 'Sem daados ainda!',
     ComplexidadeUrbana: {
-      SuperficieNãoResidencial: 'Sem dados ainda!',
-      ContinuidadeEspacialDaVia: 'Sem dados ainda!',
+      SuperficieNãoResidencial: 'Sem daados ainda!',
+      ContinuidadeEspacialDaVia: 'Sem daados ainda!',
     },
     BioDiversidade: {
-      espacoVerdePorHabitante: 'Sem dados ainda!',
+      espacoVerdePorHabitante: 'Sem daados ainda!',
       proximidadeSimultaneaAEspacosVerdes: 'Sem dados ainda!',
     },
     AcessoSimultaneoAEquipamentosBasicos:{
@@ -230,6 +231,7 @@ export const DadosAlteraveis = {
       HistoricoDeInundção: 'Sem dados ainda!',
       TaxaDeCriminalidadeNoLocal: 'Sem dados ainda!',
       HistoricoDeDeslizamento: 'Sem dados ainda!',
-    }
+    },
+    ProximidadeTransporteAlternativo: 'Sem Dados Ainda!',
   },
 };

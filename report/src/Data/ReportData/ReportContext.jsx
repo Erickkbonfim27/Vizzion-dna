@@ -103,10 +103,21 @@ export default function ReportContextProvider({ children }) {
   const DistanciaDoEspacoDeBemEstarMaisProximo = DadosAlteraveis.DadosDemograficos.RegionalData.DistanciaDoEspacoMaisProximoDeBemEstar;
   const EspacoAereo = DadosAlteraveis.DadosDemograficos.RegionalData.EspacoAereo;
   const NascimentoSolar = DadosAlteraveis.DadosDemograficos.RegionalData.NascimentoSolar;
+  const AcessSistemaViario = DadosAlteraveis.Variaveis.AcessSistemaViario;
+  const ProximidadeRedeDeTransporte = DadosAlteraveis.Variaveis.ProximidadeTransporteAlternativo; //
+  const MesclaDeUsosDoSolo = DadosAlteraveis.Variaveis.MesclaDeUsosDoSolo;
+  const espacoverdeporhabitante = DadosAlteraveis.Variaveis.BioDiversidade.espacoVerdePorHabitante;
+  const EspacoDeEstarPorM2Proximo = DadosAlteraveis.DadosDemograficos.RegionalData.EspacoDeEstarPorM2Proximo;
+  const AcessoSimultaneoAEquipamentosBasicos = DadosAlteraveis.Variaveis.AcessoSimultaneoAEquipamentosBasicos;
 
-  
   const value = {
     imgHome,
+    MesclaDeUsosDoSolo,
+    AcessoSimultaneoAEquipamentosBasicos,
+    espacoverdeporhabitante,
+    EspacoDeEstarPorM2Proximo,
+    AcessSistemaViario,
+    ProximidadeRedeDeTransporte,
     EspacoAereo,
     DistanciaDoEspacoDeBemEstarMaisProximo,
     intencidadeDoTransito,

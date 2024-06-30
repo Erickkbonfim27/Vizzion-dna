@@ -10,6 +10,10 @@ import AnaliseAmbiental from "../../Components/AnaliseAmbiental/AnaliseAmbiental
 import PendenciasIptu from "../../Components/PendenciasIptu/PendenciasIptu";
 import Enchentes from "../../Components/Enchentes/Enchentes";
 import { Link } from "react-router-dom";
+import IntensidadeDoTransito from "../../Components/IntensidadeDoTransito/IntensidadeDoTransito";
+import RestricoesAereas from "../../Components/RestricoesAereas/RestricoesAereas";
+import EspacoDeEstarPorM2Proximo from "../../Components/EspacoDeEstarPorM2Proximo/EspacoDeEstarPorM2Proximo";
+import NascimentoDoSol from "../../Components/NascimentoDoSol/NascimentoDoSol";
 
 export default function CondicionantesDadosJuridicos() {
   const {
@@ -225,6 +229,13 @@ export default function CondicionantesDadosJuridicos() {
               </div>
               <Link to={LinkEarthEntornoDoImovel}>Veja no Earth</Link>
             </div>
+          </section>
+          <section className="FlexSection">
+                <IntensidadeDoTransito />
+                <RestricoesAereas />
+          </section>
+          <section className="FlexSection">
+                <NascimentoDoSol />
           </section>
         </div>
       )}
