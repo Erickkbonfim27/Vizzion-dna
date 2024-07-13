@@ -47,7 +47,7 @@ export default function Home() {
                 {message && <p>{message}</p>}
               </div>
             ) : (
-              <Link to={PATHS.SecaoUm}>Ver Relatório</Link>
+              <Link to={PATHS.SecaoDeCondicionais}>Ver Relatório</Link>
             )}
           </button>
         </div>

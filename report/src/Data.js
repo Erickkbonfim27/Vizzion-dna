@@ -1,0 +1,216 @@
+{
+    passCode: "",
+    imagemDaHome: "",
+    clientName: "",
+    coordenadas: "",
+    endereco: "",
+    Cep: "",
+    Historico: [
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [
+          { nome: "" },
+          { nome: "" },
+        ],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [{ nome: "" }],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [{ nome: "" }],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [
+          { nome: "" },
+          { nome: "" },
+        ],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [{ nome: "" }],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [{ nome: "" }],
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        CodigoDaAnotacao: "",
+      },
+      {
+        TipoDeAnotacao: "",
+        Message: "",
+        PessoasEnvolvida: [
+          { nome: "" },
+          { nome: "" },
+        ],
+        CodigoDaAnotacao: "",
+      },
+    ],
+    DivisaoFinalDoImovel: [
+      {
+        ProprietarioUm: "",
+        ProprietarioDois: "",
+        Metragem: "",
+        percento: "",
+      },
+      {
+        ProprietarioUm: "",
+        ProprietarioDois: "",
+        Metragem: "",
+        percento: "",
+      },
+      {
+        ProprietarioUm: "",
+        ProprietarioDois: "",
+        Metragem: "",
+        percento: "",
+      },
+    ],
+    RestricoesDoImovel: [
+      "",
+    ],
+    proprietariosAtuais: [
+      {
+        proprietarios: [""],
+        MetragemAprox: "",
+        Percentual: "",
+      },
+      {
+        proprietarios: [""],
+        MetragemAprox: "",
+        Percentual: "",
+      },
+      {
+        proprietarios: [""],
+        MetragemAprox: "",
+        Percentual: "",
+      },
+    ],
+    usosPermitidos: ["", "", "", "", ""],
+    enchente7mt,
+    enchente8mt,
+    enchente9mt,
+    enchente10mt,
+    zoneamento: "",
+    regrasDeUso: [""],
+    taxaOcupacao: "%",
+    Recuos: [
+      "frontal:",
+      "Lateral:",
+      "Fundos:",
+    ],
+    alvara: "",
+    habitese: "",
+    cno: "",
+    cnar: "",
+    matricula,
+    licensaAmbiental: "",
+    avcb: "",
+    escrituraPublicaDeCompraeVenda: "",
+    loteMinimo: "",
+    testada: "",
+    alturaMaximaPermitida: "",
+    macrozona: "",
+    microzona: "",
+    pavimentos: "",
+    areasVerdes: "",
+    relevo: "",
+    linkEarth:"",
+    iptu: [],
+    mapa: "",
+    viabilidade,
+    DadosDemograficos:{
+      Populacao:{
+        densidadeDemografica,
+        SalarioMedio,
+        PessoalOcupado,
+        PercentualPopulacaoRendimentoPerCapitaDeMeioSalarop,
+        
+        Educacao:{
+          TaxaDeEscolarizacao6a14,
+          MatriculaEnsinoMedio,
+          MatriculaEnsinoFundamental,
+        }
+  
+      },
+      Economia:{
+        PibPerCapita,
+        PercentualDasReceitasOriundasDeFontesExternas,
+        Idh,
+      },
+      MeioAmbiente:{
+        AreaUrbanizadaEmKm2,
+        PercentoEsgotamentoSanitarioAdequado,
+        ArborizacaoDeViasPublicas,
+         
+      },
+      RegionalData:{
+        IntensidadeDoTransito: '',
+        EspacoAereo: '',
+        EspacoDeEstarPorM2Proximo: '',
+        NascimentoSolar: {
+            direcao: '',
+            comoInfluencia: '',
+            imgIlustrativaDoLocalInformandoNascimentoDoSol: '',
+        },
+      },
+    },
+    Variaveis: {
+      MesclaDeUsosDoSolo: '',
+      DensidadeDePessoasJuridicas: '',
+      AcessSistemaViario: '',
+      ComplexidadeUrbana: {
+        SuperficieNãoResidencial: '',
+        ContinuidadeEspacialDaVia: '',
+      },
+      BioDiversidade: {
+        espacoVerdePorHabitante: '',
+        proximidadeSimultaneaAEspacosVerdes: '',
+      },
+      AcessoSimultaneoAEquipamentosBasicos:{
+        RaioDeAnalise: '',
+        mercado: '',
+        centroDeSaude: '',
+        centroDeBemEstarSocial: '',
+        centroCivico: '',
+        centroCultural: '',
+        redeDeCiclovia: '',
+        centroDeEducacaoPrimaria: '',
+        centroDeEducacaoSecundaria: '',
+        servicosPublicos: '',
+        paradasDeTransportePublico: '',
+      },
+      SaneamentoBasico:{
+        agua: '',
+        esgoto: '',
+        lixo: '',
+        HistoricoDeInundção: '',
+        TaxaDeCriminalidadeNoLocal: '',
+        HistoricoDeDeslizamento: '',
+      },
+      ProximidadeTransporteAlternativo: '',
+    },
+  };
+  

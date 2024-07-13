@@ -1,10 +1,9 @@
-import imgVar from "./Data/Reportimages/image.png";
+import imgVar from "./Data/Reportimages/Enchentes/imagem_capa.jpg";
 import enchente7mt from "./Data/Reportimages/Enchentes/enchente7mt.png";
 import enchente8mt from "./Data/Reportimages/Enchentes/enchente8mt.png";
 import enchente9mt from "./Data/Reportimages/Enchentes/enchente9mt.png";
 import enchente10mt from "./Data/Reportimages/Enchentes/enchente10mt.png";
 
-import matricula from './Data/Reportimages/ClientDocs/Matricula.pdf';
 import viabilidade from './Data/Reportimages/ClientDocs/viabilidade1.pdf';
 var imgagemDoSol = 's';
 
@@ -19,13 +18,15 @@ const formatCurrency = (value) => {
 
 
 export const DadosAlteraveis = {
-  passCode: "000-aaa",
+  passCode: "120-sda",
   imagemDaHome: imgVar,
   clientName: "José",
-  coordenadas: "-27.10589409588796, -48.913661305307016",
-  endereco: "Rua Francisco Walendosky - Centro 2",
-  Cep: "88353-201",
+  coordenadas: "-27.091432, -48.916920",
+  endereco: "Rua Orlando José schaeffer",
+  Cep: "8835-120",
+
   Historico: [
+    /*
     {
       TipoDeAnotacao: "Doacao",
       Message: "Doação de 1/3 do imóvel para",
@@ -87,8 +88,10 @@ export const DadosAlteraveis = {
       ],
       CodigoDaAnotacao: "R. 9-23.543",
     },
+    */
   ],
   DivisaoFinalDoImovel: [
+    /*
     {
       ProprietarioUm: "Walmir Merisio e Ledy",
       ProprietarioDois: "Walendosky Merisio",
@@ -107,12 +110,15 @@ export const DadosAlteraveis = {
       Metragem: "752,47m²",
       percento: "33%",
     },
+    */
   ],
+  
   RestricoesDoImovel: [
-    "Necessidade de retificação de área total na matrícula",
-    "Ausência de registro das partes de Walmir Merisio e Ledy, bem como de Marlu Walendosky Martins e Ivana",
+    "Não é possível a construção de 3 pavimentos - Plano Diretor",
+    "Analise de Viabilidade pública divergente de plano diretor.",
   ],
   proprietariosAtuais: [
+    /*
     {
       proprietarios: ["Walmir Merisio", "Lady Walendosky Merisio"],
       MetragemAprox: "752,47m²",
@@ -128,40 +134,40 @@ export const DadosAlteraveis = {
       MetragemAprox: "752,47m²",
       Percentual: "33.33%",
     },
+    */
   ],
-  usosPermitidos: ["NC1-B", "NC1-C", "NC2-A", "NC2-B", "NC2-C"],
-  enchente7mt,
-  enchente8mt,
-  enchente9mt,
-  enchente10mt,
+  usosPermitidos: ["NC1-b", "NC1-c", "NC2-a", "NC2-b"],
+  // enchente7mt,
+  // enchente8mt,
+  // enchente9mt,
+  // enchente10mt,
   zoneamento: "urbano",
-  regrasDeUso: ["dontFind"],
+  regrasDeUso: ["Limite máximo de pé direito de 2.6mt", "Limite máximo de construção: 10mt + 1.1mt de pratibanda", "Area Extritamente residencial", "Plano diretor autoriza somente construção com gabarito de até 2 pavimentos"],
   taxaOcupacao: "50%",
   Recuos: [
-    "frontal: 5 metros",
-    "Lateral: 3 metros",
-    "Fundos: 3 metros",
+    "frontal: 4.5 metros",
+    "Lateral: 1.5 metros",
   ],
   alvara: "dontFind",
   habitese: "dontFind",
   cno: "dontFind",
   cnar: "dontFind",
-  matricula,
+ // matricula,
   licensaAmbiental: "dontFind",
   avcb: "dontFind",
   escrituraPublicaDeCompraeVenda: "dontFind",
   loteMinimo: "240m²",
   testada: "12mt",
   alturaMaximaPermitida: "dontSpecificData",
-  macrozona: "zmpl",
-  microzona: "UP UP12",
-  pavimentos: "6",
+  macrozona: "ZCI",
+  microzona: "UP-UP01-Centro I",
+  pavimentos: "2",
   areasVerdes: "não presente no local",
   relevo: "dontFind",
   linkEarth:
-    "https://earth.google.com/web/data=MkEKPwo9CiExc1YtdW9fTUtWMVFjNC1aVGZ2d2VuNU9YRFNpQkxzOUgSFgoUMDA5MUNBRjczNzMxODI5ODA0ODIgAQ",
+    "https://earth.google.com/web/data=MkEKPwo9CiExTHJKczdDSm5CNVoxbjVFZFB4MklBNk52LUFmSGlUcXcSFgoUMDgxMDY1NTNBNjMxREEwMDUzOEQgAQ",
   iptu: ['sem pendências encontradas'],
-  mapa: "https://earth.google.com/earth/d/1sV-uo_MKV1Qc4-ZTfvwen5OXDSiBLs9H?usp=sharing",
+  mapa:"https://earth.google.com/web/data=MkEKPwo9CiExTHJKczdDSm5CNVoxbjVFZFB4MklBNk52LUFmSGlUcXcSFgoUMDgxMDY1NTNBNjMxREEwMDUzOEQgAQ",
   viabilidade,
   DadosDemograficos:{
     Populacao:{
