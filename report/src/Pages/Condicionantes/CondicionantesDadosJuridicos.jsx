@@ -6,14 +6,14 @@ import IsNotVerified from "../../Components/isNotVerifyed/isNotVerified";
 import RegrasDeUso from "../../Components/Zoneamento/Zoneametno";
 import Dowloadable from "../../Components/Dowloadable/Dowloadable";
 import DadosGerais from "../../Components/DadosGerais/DadosGerais";
-// import AnaliseAmbiental from "../../Components/AnaliseAmbiental/AnaliseAmbiental";
+import AnaliseAmbiental from "../../Components/AnaliseAmbiental/AnaliseAmbiental";
 import PendenciasIptu from "../../Components/PendenciasIptu/PendenciasIptu";
 import Enchentes from "../../Components/Enchentes/Enchentes";
 import { Link } from "react-router-dom";
 import IntensidadeDoTransito from "../../Components/IntensidadeDoTransito/IntensidadeDoTransito";
 import RestricoesAereas from "../../Components/RestricoesAereas/RestricoesAereas";
+import EspacoDeEstarPorM2Proximo from "../../Components/EspacoDeEstarPorM2Proximo/EspacoDeEstarPorM2Proximo";
 import NascimentoDoSol from "../../Components/NascimentoDoSol/NascimentoDoSol";
-import ImagemParaOIframe from "../../Data/Reportimages/Enchentes/imagem_entorno.jpg";
 
 export default function CondicionantesDadosJuridicos() {
   const {
@@ -110,7 +110,6 @@ export default function CondicionantesDadosJuridicos() {
             />
             <PendenciasIptu iptu={iptu} />
           </section>
-          {/*
           <section className="Ambiental">
             <h2 className="titleSectionAmbinetal">Analise Ambiental</h2>
             <AnaliseAmbiental
@@ -120,17 +119,14 @@ export default function CondicionantesDadosJuridicos() {
               linkEarth={linkEarth}
             />
           </section>
-          */}
           <section className="Enchentes">
             <div className="text">
               <h3>Afetação em Enchentes</h3>
               <p>
-                O mapeamento realizado retornou que a área é livre de afetação
-                em enchentes com nível do rio chegando até em 15 metros acima do
-                esperado.
+                O mapeamento abaixo se refere em como a área dm questão pode ser
+                atingida de acordo com o nível do rio
               </p>
             </div>
-
             <Enchentes
               nv1={enchente7mt}
               nv2={enchente8mt}
@@ -146,7 +142,6 @@ export default function CondicionantesDadosJuridicos() {
             decisão de compra e precificação do ativo.
           </p>
           <section className="EnvoltaDoImovel">
-            {/*
             <iframe
               src="https://www.google.com/maps/d/u/0/embed?mid=1gO1npXJZM4rsYPiOJm-eXO_4tOHrZLI&ehbc=2E312F&noprof=1"
               width="640"
@@ -156,69 +151,85 @@ export default function CondicionantesDadosJuridicos() {
               loading="lazy"
               title="Google Maps"
             ></iframe>
-            */}
-            <iframe
-              src={ImagemParaOIframe}
-              width="640"
-              height="480"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
             <div className="Legendas">
-              <h3>Disponível no entorno</h3>
+              <h3>Legenda do mapa</h3>
               <div className="legendaCompletaDoArredorDoImol">
                 <div className="flexSection">
                   <section className="Legend">
-                    <p>Escolas São Luiz </p>
+                    <span className="Escolas"></span>
+                    <p>Escola</p>
                   </section>
                   <section className="Legend">
-                    <p>Mercado Angeloni</p>
+                    <span className="Parques"></span>
+                    <p>Parques</p>
                   </section>
                   <section className="Legend">
-                    <p>Universiade São luiz</p>
+                    <span className="Mercados"></span>
+                    <p>Mercados</p>
                   </section>
                   <section className="Legend">
+                    <span className="Faculdade"></span>
+                    <p>Universiade</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="PontoDeOnibus"></span>
                     <p>Ponto de ônibos</p>
                   </section>
                   <section className="Legend">
-                    <p>Cuidados com a saúde em geral</p>
+                    <span className="centro"></span>
+                    <p>Centro</p>
                   </section>
                   <section className="Legend">
-                    <p>Hospital Imigrantes</p>
+                    <span className="CuidadosComCabelo"></span>
+                    <p>Cuidados com Cabelo</p>
                   </section>
                   <section className="Legend">
-                    <p>Academia</p>
+                    <span className="WeGoGym"></span>
+                    <p>Academias</p>
                   </section>
                 </div>
                 <div className="flexSection">
                   <section className="Legend">
-                    <p>Recursos Jurídicos</p>
+                    <span className="Petshop"></span>
+                    <p>Petshop</p>
                   </section>
                   <section className="Legend">
-                    <p>Comercíos de pequeno e médio porte</p>
+                    <span className="mecanica"></span>
+                    <p>Mecanica</p>
                   </section>
                   <section className="Legend">
-                    <p>Culinária</p>
+                    <span className="Padaria"></span>
+                    <p>Padaria</p>
                   </section>
                   <section className="Legend">
-                    <p>Farmácias</p>
+                    <span className="fisioterapia"></span>
+                    <p>Cuidados com a saúde</p>
                   </section>
                   <section className="Legend">
-                    <p>Veterinário</p>
+                    <span className="hospitalMaisProximo"></span>
+                    <p>Hospital mais próximo</p>
                   </section>
                   <section className="Legend">
-                    <p>Recursos contábeis</p>
+                    <span className="Creche"></span>
+                    <p>Creche</p>
                   </section>
                   <section className="Legend">
-                    <p>Próximo à prefeitura</p>
+                    <span className="Havan"></span>
+                    <p>Havan</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Estadio"></span>
+                    <p>Estadio</p>
+                  </section>
+                  <section className="Legend">
+                    <span className="Lifestyle"></span>
+                    <p>Lifestyle</p>
                   </section>
                 </div>
               </div>
-              <Link to={LinkEarthEntornoDoImovel}>Veja de maneira interativa no Earth</Link>
+              <Link to={LinkEarthEntornoDoImovel}>Veja no Earth</Link>
             </div>
           </section>
-          {/*
           <section className="FlexSection">
                 <IntensidadeDoTransito />
                 <RestricoesAereas />
@@ -226,7 +237,6 @@ export default function CondicionantesDadosJuridicos() {
           <section className="FlexSection">
                 <NascimentoDoSol />
           </section>
-          */}
         </div>
       )}
       {Verified === "False" && (
