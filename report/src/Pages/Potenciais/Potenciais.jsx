@@ -13,6 +13,7 @@ export default function Potenciais() {
   const {
     AcessSistemaViario,
     ProximidadeRedeDeTransporte,
+    espacoverdeporhabitante,
     EspacoDeEstarPorM2Proximo,
     AcessoSimultaneoAEquipamentosBasicos,
   } = useReportContext();

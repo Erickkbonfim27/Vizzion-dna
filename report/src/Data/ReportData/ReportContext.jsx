@@ -50,7 +50,7 @@ export default function ReportContextProvider({ children }) {
     }
   };
 
-  const LinkEarthEntornoDoImovel = "https://earth.google.com/web/data=MkEKPwo9CiExTHJKczdDSm5CNVoxbjVFZFB4MklBNk52LUFmSGlUcXcSFgoUMDgxMDY1NTNBNjMxREEwMDUzOEQgAQ";
+  const LinkEarthEntornoDoImovel = "https://earth.google.com/web/@-27.10815205,-48.9144618,23.43798021a,6139.88427919d,30y,0h,0t,0r/data=MigKJgokCiAxZ08xbnBYSlpNNHJzWVBpT0ptLWVYT180dE9IclpMSSAC";
   const imgHome = DadosAlteraveis.imagemDaHome;
   const clientName = DadosAlteraveis.clientName;
   const coordenadas = DadosAlteraveis.coordenadas;
@@ -72,7 +72,7 @@ export default function ReportContextProvider({ children }) {
   const habitese = DadosAlteraveis.habitese;
   const cno = DadosAlteraveis.cno;
   const cnar = DadosAlteraveis.cnar;
-  //const matricula = DadosAlteraveis.matricula;
+  const matricula = DadosAlteraveis.matricula;
   const licensaAmbiental = DadosAlteraveis.licensaAmbiental;
   const avcb = DadosAlteraveis.avcb;
   const escrituraPublicaDeCompraeVenda = DadosAlteraveis.escrituraPublicaDeCompraeVenda;
@@ -146,7 +146,7 @@ export default function ReportContextProvider({ children }) {
     habitese,
     cno,
     cnar,
-    //matricula,
+    matricula,
     licensaAmbiental,
     avcb,
     escrituraPublicaDeCompraeVenda,

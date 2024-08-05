@@ -17,7 +17,7 @@ export default function ReportSectUm() {
         <div className="ReporstSectUm">
           <Header selected="historico" />
           <div className="HistoricTitle">
-            <h3>Histórico do imóvel <br /> indisponível por falta do número da mátrícula </h3>
+            <h3>Histórico do imóvel</h3>
             <Link to={PATHS.SecaoDeCondicionais}>
               Dados Condicionantes do imóvel
             </Link>
